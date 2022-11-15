@@ -1,0 +1,120 @@
+.h6s{
+    margin-left: 4rem;   
+}
+.h6{
+    font-size: 0.7rem;
+    padding-left: 4rem;
+    padding-top: 7rem;
+}
+                    /* first Section */
+.section-card{
+    margin-left: 4rem;
+    margin-top: 1rem;
+    display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+.section-card1{
+    margin-left: 0rem;
+    width: 22rem;
+    height: 1rem;
+    
+}
+
+.section-card2{
+    margin-left: 1.4rem;
+    width: 22rem;
+    height: 1rem;
+}
+
+.section-card3{
+    margin-left: 2.4rem;
+    width: 22rem;
+    height: 1rem;
+}
+
+.section-card4{
+    margin-left: 3.4rem;
+    width: 22rem;
+    height: 1rem;
+}
+.sectionIcon{
+    margin-left: 87rem;
+    margin-top: -4rem;
+    font-size: 2rem;
+}
+.sectionIcon1{
+    margin-left: 1rem;
+    margin-top: -4rem;
+    font-size: 2rem;
+}
+
+.section-cardNames{
+    display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  margin-top: 1.2rem;
+  height: 7.8rem;
+}
+.s-cards1{
+    margin-left: 4rem;
+}
+.s-cards2{
+    margin-left: 11rem;
+}
+.s-cards3{
+    margin-left: 17rem;
+}
+.s-cards4{
+    margin-left: 15rem;
+}
+
+        /* Second Section */
+.section2-card{
+            margin-left: 4rem;
+            margin-top: 1rem;
+            display: flex;
+          flex-wrap: nowrap;
+          align-content: center;
+        }        
+
+.section2{
+    margin-top: -7rem;
+}
+
+.section2-card1{
+    margin-left: 0rem;
+    width: 26rem;
+    height: 1rem;
+    
+}
+
+.section2-card2{
+    margin-left: 2.8rem;
+    width: 26rem;
+    height: 1rem;
+}
+
+.section2-card3{
+    margin-left: 3rem;
+    width: 26rem;
+    height: 1rem;
+}
+
+.section2-cardNames{
+    display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  margin-top: 1.2rem;
+  height: 7.8rem;
+}
+
+.s2-cards1{
+    margin-left: 4rem;
+}
+.s2-cards2{
+    margin-left: 15rem;
+}
+.s2-cards3{
+    margin-left: 25rem;
+}
