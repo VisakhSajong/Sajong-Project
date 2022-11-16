@@ -37,7 +37,7 @@ function Header() {
   </div>
   <div className='text'>
     <h1>India's new <br /> trip planner</h1><br />
-    <h4>Dot we make your trips <br /> more memorable...</h4><br /><br />
+    <h4 className='text1'>Dot we make your trips <br /> more memorable...</h4>
   </div>
     <div className='input'>
       <div className="input3">

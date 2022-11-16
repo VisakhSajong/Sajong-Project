@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
-import { BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill } from 'react-icons/bs'
+import { BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill, BsFillStarFill } from 'react-icons/bs'
 import './Section.css'
 
 function Section() {
@@ -76,11 +76,11 @@ function Section() {
             {/* Fourth Section  */}
 
     <div className="section4">
-    <h6 className='h6'>SEASONAL SUGGESTIONS</h6>
-    <h1 className='h6s'>Where to Next?</h1>
+    <h6 className='h6'>DOT EXCLUSIVE</h6>
+    <h1 className='h6s'>Discover Travel Memories</h1>
     <div className="section4-card">
       <Card  className='section4-card1'>
-      <Card.Img variant="top" src="https://images.unsplash.com/photo-1623995523843-f282cd8aa1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a2FybmF0YWthJTIwdGlnZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+      <Card.Img variant="top" src="https://images.unsplash.com/photo-1623995523843-f282cd8aa1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a2FybmF0YWthJTIwdGlnZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=40" />
     </Card>
     <Card className='section4-card2'>
       <Card.Img variant="top" src="https://images.unsplash.com/photo-1568454537842-d933259bb258?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dHJla2tpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
@@ -93,12 +93,49 @@ function Section() {
       </Card>
     </div>
     <div className='section4-cardNames'>
-    <h3 className='s4-cards1'>National Parks</h3>
-    <h3 className='s4-cards2'>Trekking</h3>
-    <h3 className='s4-cards3'>Hill Station</h3>
-    <h3 className='s4-cards4'>Honey Moon</h3>
+    <h4 className='s4-cards1'>Wanderlust Hampi</h4>
+    <h4 className='s4-cards2'>Waterfall GuestHouse</h4>
+    <h4 className='s4-cards3'>WildStone Hampi</h4>
+    <h4 className='s4-cards4'>Hakuna Matuta Inn</h4>
     </div>
+    <div className='section4-cardNames2'>
+    <p className='s4-p1'>3 Beds,2 Bedrooms</p>
+    <p className='s4-p2'>3 Beds,2 Bedrooms</p>
+    <p className='s4-p3'>3 Beds,2 Bedrooms</p>
+    <p className='s4-p4'>3 Beds,2 Bedrooms</p>
     </div>
+    <div className='section4-rate'>
+    <p className='s4-r1'>₹4679/night</p>
+    
+    <p className='s4-r2'>₹4679/night</p>
+    <p className='s4-r3'>₹4679/night</p>
+    <p className='s4-r4'>₹4679/night</p>
+    
+    </div>
+    <BsFillStarFill className='rate1'  />
+    <p className='p1'>(70 Reviews)</p> 
+    <BsFillStarFill className='rate2'  />
+    <p className='p2'>(70 Reviews)</p> 
+    <BsFillStarFill className='rate3'  />
+    <p className='p3'>(70 Reviews)</p> 
+    <BsFillStarFill className='rate4'  />
+    <p className='p4'>(70 Reviews)</p> 
+    </div>
+    <div className='section4-button'>
+    <button className='section4-button1'>Discover More Stays</button>
+    <h6 className='h6'>DOT EXCLUSIVE</h6>
+    <h1 className='h6s'>Discover Travel Memories</h1>
+    </div>
+             {/* Fifth Section  */}
+ <div className="section5">
+<div className='text5'>
+<p> More about Dot  <br /> Membership <br />Card.</p>
+</div>
+  <div className="section3-button">
+  <button className='section3-button1'>Know More</button>
+  </div>
+</div>
+
 
     </div>
   )

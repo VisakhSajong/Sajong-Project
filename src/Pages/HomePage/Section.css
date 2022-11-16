@@ -148,10 +148,10 @@
     background-repeat: no-repeat;
     margin-top: 5rem;
     margin-left: 12rem;
-    border-radius: 2rem
+    border-radius: 2rem;
 }
 
-.text {
+.text{
     color: white;
     margin-left: 114px;
     padding-top: 5rem;
@@ -214,7 +214,7 @@
   flex-wrap: nowrap;
   align-content: center;
   margin-top: 1.2rem;
-  height: 7.8rem;
+  white-space: nowrap;
 }
 .s4-cards1{
     margin-left: 4rem;
@@ -223,8 +223,155 @@
     margin-left: 11rem;
 }
 .s4-cards3{
-    margin-left: 17rem;
+    margin-left: 8.3rem;
 }
 .s4-cards4{
-    margin-left: 15rem;
+    margin-left: 12rem;
 }
+
+.section4-cardNames2{
+    display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+    font-size: 1rem;
+}
+
+.s4-p1{
+    margin-left: 4rem;
+}
+.s4-p2{
+    margin-left: 15rem;
+    margin-top: 0rem;
+}
+.s4-p3{
+    margin-left: 15rem;
+    margin-top: 0rem;
+}
+.s4-p4{
+    margin-left: 16rem;
+}
+
+.section4-rate{
+    display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+    font-size: 1rem;
+}
+
+.s4-r1{
+    margin-left: 4rem;
+    margin-top: -20px;
+}
+.s4-r2{
+    margin-left: 18rem;
+    margin-top: -20px;
+}
+.s4-r3{
+    margin-left: 18rem;
+    margin-top: -20px;
+}
+.s4-r4{
+    margin-left: 19rem;
+    margin-top: -16px;
+ } 
+
+ .rate1{
+    margin-left: 14rem;
+    margin-top: -6rem;
+    font-size: 14px;
+    color: #ff3b00;
+} 
+
+.rate2{
+    margin-left: 38rem;
+    margin-top: -5rem;
+    font-size: 14px;
+    color: #ff3b00;
+} 
+.rate3{
+    margin-left: 61rem;
+    margin-top: -5rem;
+    font-size: 14px;
+    color: #ff3b00;
+} 
+.rate4{
+    margin-left: 83rem;
+    margin-top: -75px;
+    font-size: 14px;
+    color: #ff3b00;
+} 
+
+ .p1{
+    margin-top: -70px;
+    margin-left: 242px;
+} 
+
+.p2{
+     margin-top: -63px;
+     margin-left: 39rem;
+} 
+
+.p3{
+    margin-top: -63px;
+    margin-left: 62rem;
+} 
+.p4{
+    margin-top: -60px;
+    margin-left: 84rem;
+} 
+
+.section4-button{
+    margin-left: 4rem;
+    margin-top: 2rem;
+    background-color: white;
+}
+
+.section4-button1
+{
+    background-color: white;
+     border-color: black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 1.6rem;
+  border: 1px solid black;
+}
+
+                          /* Section 4 */
+                        
+     .section5{
+        background-image:url('tiger.jpg');
+        width: 45%;
+        height: 652px;
+        background-size: cover ;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 5rem;
+        margin-left: 4rem;
+        border-radius: 2rem;
+    }
+    
+    .text5{
+        color: white;
+        margin-left: 114px;
+        padding-top: 5rem;
+        font-size: 4.1rem;
+    }
+
+    .section3-button{
+        margin-left: 134px;
+    }
+    .section3-button1{
+        background-color: rgb(48, 34, 34);
+        border-color: black;
+     color: white;
+     text-align: center;
+     font-size: 25px;
+     margin: 4px 2px;
+     cursor: pointer;
+     border-radius: 1.6rem;
+     border: 1px solid black;
+    }
