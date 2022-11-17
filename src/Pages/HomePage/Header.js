@@ -6,13 +6,15 @@ import Avatar from 'react-avatar'
 import { Search } from '@rsuite/icons';
 import "rsuite/dist/rsuite.min.css";
 import { IconButton } from "rsuite";
+import image from './image.jpg'
+import img2 from './img2.jpg'
+
 function Header() {
-  const ButtonStyle = { margin: "0px 10px" };
+  // const ButtonStyle = { margin: "0px 10px" };
   return (
     <div className='header'>
-      
-    <div className=''>
-      
+      <img className='header-images' src={image} alt="images" />
+      <div className="image-sections">
     <Navbar expand="lg">
       <Container fluid>
         <Navbar.Collapse id="navbarScroll">
@@ -32,14 +34,13 @@ function Header() {
       </Container>
     </Navbar>
   </div> 
-  <div className="img2">
-        
+  <div>
+        <img className="img2" src={img2} alt="" />
   </div>
   <div className='text'>
     <h1>India's new <br /> trip planner</h1><br />
     <h4 className='text1'>Dot we make your trips <br /> more memorable...</h4>
   </div>
-    <div className='input'>
       <div className="input3">
     <Form className="input4" >
     <Form.Control
@@ -49,12 +50,11 @@ function Header() {
               aria-label="Search"
             />
             <IconButton icon={<Search />} color="red" 
-                appearance="primary" style={ButtonStyle} className='icon3' />
+                appearance="primary" className='icon3' size={30} />
                   <Dropdown>
       <Dropdown.Toggle variant="light" id="dropdown-basic">
         Choose Destination
       </Dropdown.Toggle>
-
       <Dropdown.Menu class="dropdown-menu">
         <Dropdown.Item href="#/action-1">Humbi</Dropdown.Item>
         <Dropdown.Item href="#/action-2">Alappuzha</Dropdown.Item>
@@ -65,7 +65,7 @@ function Header() {
     </Dropdown>
           </Form>
           </div>
-          </div>
+    
         <div className='button3'>
           <br />
         <button className='button4'>
@@ -87,8 +87,8 @@ function Header() {
       <h6 className='bname'>Gokarna</h6>   
       </button>
          </div>  
-        
-  </div>
+         
+         </div>
   )
 }
 

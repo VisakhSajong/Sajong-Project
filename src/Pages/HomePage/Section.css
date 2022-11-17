@@ -1,6 +1,8 @@
 .h6s{
-    margin-left: 4rem;   
+    margin-left: 4rem; 
+      
 }
+
 .h6{
     font-size: 0.7rem;
     padding-left: 4rem;
@@ -187,8 +189,8 @@
     margin-left: 0rem;
     width: 26rem;
     height: 1rem;
-    border-radius: 2em;
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 2.375rem !important;
+    /* box-shadow: 5px 5px 5px 5px white; */
 
 }
 
@@ -196,17 +198,20 @@
     margin-left: 2.8rem;
     width: 26rem;
     height: 1rem;
+    border-radius: 2.375rem !important;
 }
 
 .section4-card3{
     margin-left: 3rem;
     width: 26rem;
     height: 1rem;
+    border-radius: 2.375rem !important;
 }
 .section4-card4{
     margin-left: 3rem;
     width: 26rem;
     height: 1rem;
+    border-radius: 2.375rem !important;
 }
 
 .section4-cardNames{
@@ -215,9 +220,11 @@
   align-content: center;
   margin-top: 1.2rem;
   white-space: nowrap;
+  
 }
 .s4-cards1{
     margin-left: 4rem;
+    border-radius: 10px;
 }
 .s4-cards2{
     margin-left: 11rem;
@@ -343,29 +350,34 @@
                           /* Section 4 */
                         
      .section5{
-        background-image:url('tiger.jpg');
         width: 45%;
         height: 652px;
         background-size: cover ;
         background-position: center;
         background-repeat: no-repeat;
         margin-top: 5rem;
-        margin-left: 4rem;
+        margin-left: 9rem;
         border-radius: 2rem;
     }
-    
-    .text5{
-        color: white;
-        margin-left: 114px;
-        padding-top: 5rem;
-        font-size: 4.1rem;
+
+    .section5-img{
+        position: absolute;
+        margin-left: 10rem;
     }
 
-    .section3-button{
-        margin-left: 134px;
-    }
-    .section3-button1{
-        background-color: rgb(48, 34, 34);
+    
+    
+        .text5 {
+            color: white;
+            margin-left: 49px;
+            margin-top: -29rem;
+            font-size: 2.1rem;
+        }
+    
+
+    
+    .section5-button1{
+        background-color: black;
         border-color: black;
      color: white;
      text-align: center;
@@ -374,4 +386,51 @@
      cursor: pointer;
      border-radius: 1.6rem;
      border: 1px solid black;
+     margin-left: 3rem;
     }
+
+    .text5-img2{
+        color: white;
+        margin-left: 43rem;
+        margin-top: -12rem;
+        font-size: 2.1rem;
+    }
+
+    .section5-1{
+        position: absolute;
+    }
+
+    .section5-button2{
+        background-color: black;
+        border-color: black;
+     color: white;
+     text-align: center;
+     font-size: 25px;
+     margin: 4px 2px;
+     cursor: pointer;
+     border-radius: 1.6rem;
+     border: 1px solid black;
+     margin-left: 43rem;
+    }
+
+    .section5-button3{
+        margin-left: 8rem;
+        margin-top: 3rem;
+        background-color: white;
+    }
+    
+    .section5-button4
+    {
+        background-color: white;
+         border-color: black;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 1.6rem;
+      border: 1px solid black;
+    }
+
+    

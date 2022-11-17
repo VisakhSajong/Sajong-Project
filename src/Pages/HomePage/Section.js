@@ -80,16 +80,16 @@ function Section() {
     <h1 className='h6s'>Discover Travel Memories</h1>
     <div className="section4-card">
       <Card  className='section4-card1'>
-      <Card.Img variant="top" src="https://images.unsplash.com/photo-1623995523843-f282cd8aa1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a2FybmF0YWthJTIwdGlnZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=40" />
+      <Card.Img style={{ borderRadius: '29px'}} variant="top" src="https://images.unsplash.com/photo-1623995523843-f282cd8aa1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a2FybmF0YWthJTIwdGlnZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
     </Card>
     <Card className='section4-card2'>
-      <Card.Img variant="top" src="https://images.unsplash.com/photo-1568454537842-d933259bb258?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dHJla2tpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
+      <Card.Img style={{ borderRadius: '29px'}} variant="top" src="https://images.unsplash.com/photo-1568454537842-d933259bb258?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dHJla2tpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
     </Card>
     <Card className='section4-card3'>
-      <Card.Img variant="top" src="https://images.unsplash.com/photo-1608825090252-a2163590fe08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
+      <Card.Img style={{ borderRadius: '29px'}} variant="top" src="https://images.unsplash.com/photo-1608825090252-a2163590fe08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
     </Card>
     <Card className='section4-card4'>
-      <Card.Img variant="top" src="https://images.unsplash.com/photo-1576604303800-f2435c2db6bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhvbmV5bW9vbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
+      <Card.Img style={{ borderRadius: '29px'}} variant="top" src="https://images.unsplash.com/photo-1576604303800-f2435c2db6bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhvbmV5bW9vbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
       </Card>
     </div>
     <div className='section4-cardNames'>
@@ -128,15 +128,18 @@ function Section() {
     </div>
              {/* Fifth Section  */}
  <div className="section5">
-<div className='text5'>
-<p> More about Dot  <br /> Membership <br />Card.</p>
-</div>
-  <div className="section3-button">
-  <button className='section3-button1'>Know More</button>
+  <img src="https://images.unsplash.com/photo-1620766182966-c6eb5ed2b788?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFtcGl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="hampi" />
+  <img src="https://images.unsplash.com/photo-1620766182966-c6eb5ed2b788?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFtcGl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="hampi" className='section5-img' />
+<p className='text5'> 14 Things to do   <br /> in Hampi</p>
+  <button className='section5-button1'>Know More</button>
+    <div className="section5-1">
+  <p className='text5-img2'>Top Destinations for <br /> food and drink</p>
+  <button className='section5-button2'>Know More</button>
   </div>
-</div>
-
-
+  </div>
+  <div className='section5-button3'>
+    <button className='section5-button4'>View More Stories</button>
+    </div>
     </div>
   )
 }
