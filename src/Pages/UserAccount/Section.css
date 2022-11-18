@@ -2,4 +2,77 @@
     margin-top: 24px;
     padding-top: 4rem;
     padding-left: 5rem;
+    
+}
+
+.section-git{
+    margin-left: 10px;
+    margin-top: 14px;
+    width: 191px !important;
+    height: 151px !important;
+    border-radius: 94px !important;
+}
+
+.section-cam {
+    margin-top: 2rem;
+    margin-left: 7rem;
+}
+
+.section-text{
+    margin-top: 18px;
+}
+
+.section1{
+    width: 29%;
+}
+
+.myAccount{
+   
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center; 
+}
+
+.user-sections{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.section2{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.section2-p{
+    margin-left: 49rem;
+}
+
+.user-details{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center; 
+    margin-top: 25px;
+    margin-left: 3rem;
+}
+
+.section2-h6{
+    margin-left: 7rem;
+}
+
+.section2-h7{
+    margin-left: 10rem;
+}
+
+
+.section2-p1{
+    margin-left: 4rem
+}
+
+.section2-p2{
+    margin-left: 7rem;
+}
+
+.section2-p3{
+    margin-left: 3rem;
 }
