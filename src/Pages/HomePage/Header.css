@@ -30,7 +30,8 @@
     border-radius: 24px!important;
 }
 .dropdown{
-    margin-left: 23px;
+    margin-left: 35px;
+    margin-top: 10px;
 }
 
 .search {
@@ -44,13 +45,13 @@
     height: 137px;
     width: 150px;
     margin-left: 76px;
-    margin-top: -66px;
+    margin-top: -70rem;
     border-radius: 6rem;
 }
 
 .icons {
-    padding-right: 39px;
-    padding-top: 55px;
+    padding-left: 80rem;
+    margin-top: -5rem;
 }
 .icon1 {
     color: white;
@@ -58,17 +59,20 @@
     margin-top: 53px;
 }
 .icon3{
-    margin: 0px 10px;
-    font-size: 1px;
+    padding-top: 1rem;
+    border-radius: 142px;
+    width: 51px;
+    padding-left: 10px;
+    margin-left: 3px;  
 }
 
 .git {
-    margin-top: 19px;
+    margin-top: 16px;
     margin-right: 6px;
 }
 .text {
     color: white;
-    margin-left: 225px;
+    margin-left: 240px;
     /* margin-top: 20px; */
     padding-top: 5rem;
 }
@@ -79,7 +83,7 @@
  .input3 {
     margin-left: 229px;
     margin-right: 438px;
-
+    margin-top: 2rem;
 }
 
 .input4{
@@ -114,4 +118,17 @@ display: flex;
 }
 .dropdown-menu{
     transform: translate3d(5px, 35px, 0px)!important;
+}
+
+.header-button{
+    display: flex;
+  flex-wrap: nowrap;
+  align-content: center; 
+  margin-top: -39rem;
+    margin-left: 49rem;
+}
+
+.credit{
+    margin-top: 3rem;
+    margin-right: 2rem;
 }

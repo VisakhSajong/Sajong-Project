@@ -1,0 +1,29 @@
+.img2 {
+    width: 47px;
+    margin-left: 62px;
+    margin-top: 21px;
+}
+
+.icons{
+    margin-left: 86rem;
+    margin-top: -2rem;
+}
+
+.icon1 {
+    margin-left: -24px;
+    margin-right: 10px
+}
+
+.git{
+    margin-left: 18px;
+}
+
+.credit{
+    margin-left: 19px;
+}
+
+.shadow{
+    -webkit-box-shadow:0px 1px 1px #150c09;
+     -moz-box-shadow:0px 1px 1px #240c04;
+     box-shadow:0px 1px 1px #240c04;
+      }
