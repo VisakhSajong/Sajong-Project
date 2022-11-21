@@ -8,9 +8,15 @@ import "rsuite/dist/rsuite.min.css";
 import { IconButton } from "rsuite";
 import image from './image.jpg'
 import img2 from './img2.jpg'
+import { Link } from 'react-router-dom';
+import { click } from '@testing-library/user-event/dist/click';
 
 
 function Header() {
+
+  // const handleClick =()=>{
+  //   console.log("Clicked");
+  // }
   return (
     <div className='header'>
       <img className='header-images' src={image} alt="images" />
@@ -26,8 +32,7 @@ function Header() {
      </div>    
           <div className="icons">
         <BsSearch className='icon1' size={30}/> 
-        <BsFillCreditCardFill className='credit' size={30} color='white' />
-        
+       <BsFillCreditCardFill className='credit' size={30} color='white' />      {/* onClick={handleClick} */}
        <Avatar githubHandle="sitebase" size={40} round="20px" className='git' />
         </div>
     <div className='text'>
@@ -48,7 +53,7 @@ function Header() {
       <Dropdown.Toggle variant="light" id="dropdown-basic">
         Choose Destination
       </Dropdown.Toggle>
-      <Dropdown.Menu class="dropdown-menu">
+      <Dropdown.Menu className="dropdown-menu">
         <Dropdown.Item href="#/action-1">Humbi</Dropdown.Item>
         <Dropdown.Item href="#/action-2">Alappuzha</Dropdown.Item>
         <Dropdown.Item href="#/action-3">Ooty</Dropdown.Item>

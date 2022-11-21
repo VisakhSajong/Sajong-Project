@@ -10,7 +10,6 @@ function HomePage() {
         <Header />
         <Header2 />
         <Section />
-        <Footer />
     </div>
   )
 }

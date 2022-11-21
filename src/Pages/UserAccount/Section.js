@@ -79,9 +79,7 @@ function Section() {
       <p className='section2-content'>History of stay,travel experiences and other facilities accessed.</p>
       </Card.Body>
      </Card>
-        </div>
-
-      
+     </div>
     </div>
         
     </div>
@@ -89,3 +87,4 @@ function Section() {
 }
 
 export default Section
+

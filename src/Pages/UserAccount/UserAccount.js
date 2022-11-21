@@ -9,7 +9,6 @@ function UserAccount() {
     <div>
       <NavBar /> 
       <Section /> 
-      <Footer />
     </div>
   )
 }

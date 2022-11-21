@@ -8,12 +8,12 @@ function NavBar() {
   return (
     <div className='NavBar'>
      <div className='NavBar-images2'>
-        <img className="img2" src={img2} alt="" />
+        <img className="NavBar-img2" src={img2} alt="" />
         </div> 
-        <div className="icons">
-        <BsSearch className='icon1' size={22}/> 
-        <BsCreditCard className='credit' size={22}  />
-        <Avatar githubHandle="sitebase" size={40} round="20px" className='git' />
+        <div className="NavBar-icons">
+        <BsSearch className='NavBar-icon1' size={22}/> 
+        <BsCreditCard className='NavBar-credit' size={22}  />
+        <Avatar githubHandle="sitebase" size={40} round="20px" className='NavBar-git' />
         </div>
         <div className='shadow'></div>
     </div>
