@@ -76,3 +76,71 @@
 .section2-p3{
     margin-left: 3rem;
 }
+
+.s-Edit{
+    margin-left: 55rem;
+}
+
+.section-Address{
+    margin-top: 4rem;
+}
+
+                        /* section-icons */
+
+                        .section2-main {
+                            margin-top: -11rem;
+                            margin-left: 9rem;
+                        }
+                        
+                        .section2-icons {
+                            padding-left: 356px;
+                            padding-top: 178px;
+                        }
+                        
+                        .section-icon{
+                            margin-left: 13rem; 
+                        }
+                        
+                        .section-icon2{
+                            margin-left: 17rem;
+                        }
+                        .section-icon3{
+                            margin-left: 17rem;
+                        }
+                        
+                        .section2-content1{
+                            margin-left: 20rem;
+                            margin-top: 1.2rem;
+                        }
+                        .section2-content11{
+                            margin-left: 18rem;
+                        }
+                       
+                        .section2-content2{
+                            margin-left: 41rem;
+                            margin-bottom: 8px;
+                            margin-top: -9rem;
+                        }
+                        .section2-content22{
+                            margin-left: 41rem;
+                        }
+                       
+                        
+                        
+                        .section2-content3{
+                            margin-left: 62rem;
+                            margin-bottom: 8px;
+                            margin-top: -8rem;
+                        }
+                        
+                        .section2-content33{
+                            margin-left: 62rem;
+                        }
+                    .section2-card1{
+                        margin-left: 20rem;
+                        margin-top: -12rem;
+                        }
+                        .section2-card2{
+                            margin-left: 40rem;
+                            margin-top: -12rem;
+                            }

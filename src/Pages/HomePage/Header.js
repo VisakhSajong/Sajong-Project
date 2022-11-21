@@ -9,6 +9,7 @@ import { IconButton } from "rsuite";
 import image from './image.jpg'
 import img2 from './img2.jpg'
 
+
 function Header() {
   return (
     <div className='header'>
@@ -26,7 +27,8 @@ function Header() {
           <div className="icons">
         <BsSearch className='icon1' size={30}/> 
         <BsFillCreditCardFill className='credit' size={30} color='white' />
-        <Avatar githubHandle="sitebase" size={40} round="20px" className='git' />
+        
+       <Avatar githubHandle="sitebase" size={40} round="20px" className='git' />
         </div>
     <div className='text'>
     <h1>India's new <br /> trip planner</h1><br />

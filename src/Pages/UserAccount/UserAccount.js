@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer'
 
 import NavBar from './NavBar'
 import Section from './Section'
@@ -8,6 +9,7 @@ function UserAccount() {
     <div>
       <NavBar /> 
       <Section /> 
+      <Footer />
     </div>
   )
 }
