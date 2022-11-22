@@ -1,9 +1,9 @@
 import React from 'react'
 import { Form } from 'react-bootstrap'
 import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from 'react-icons/bs'
-import './Footer.css'
+import './userFooter.css'
 import img2 from './img2.jpg'
-function Footer() {
+function UserFooter() {
   return (
     <div className='footer'>
       <div className="footer-sections">
@@ -73,4 +73,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default UserFooter

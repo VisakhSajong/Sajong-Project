@@ -2,14 +2,15 @@ import React from 'react'
 import { Button, Dropdown, Form } from 'react-bootstrap'
 import './Header.css'
 import { BsFillCreditCardFill, BsSearch} from "react-icons/bs";
-import Avatar from 'react-avatar'
 import { Search } from '@rsuite/icons';
 import "rsuite/dist/rsuite.min.css";
 import { IconButton } from "rsuite";
 import image from './image.jpg'
 import img2 from './img2.jpg'
-import { Link } from 'react-router-dom';
-import { click } from '@testing-library/user-event/dist/click';
+import { useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+import UserAccount from '../UserAccount/UserAccount';
+
 
 
 function Header() {
@@ -17,6 +18,14 @@ function Header() {
   // const handleClick =()=>{
   //   console.log("Clicked");
   // }
+
+  const navigate=useNavigate()
+
+  const navigateToUser = () => {
+  
+    navigate("/user");
+  };
+
   return (
     <div className='header'>
       <img className='header-images' src={image} alt="images" />
@@ -33,7 +42,11 @@ function Header() {
           <div className="icons">
         <BsSearch className='icon1' size={30}/> 
        <BsFillCreditCardFill className='credit' size={30} color='white' />      {/* onClick={handleClick} */}
-       <Avatar githubHandle="sitebase" size={40} round="20px" className='git' />
+       <img onClick={navigateToUser} src={img2} className='avatar' />
+       <Routes>
+      <Route  path='UserAccount' element={<UserAccount />}>
+      </Route>
+      </Routes>
         </div>
     <div className='text'>
     <h1>India's new <br /> trip planner</h1><br />
@@ -85,7 +98,8 @@ function Header() {
       <h6 className='bname'>Gokarna</h6>   
       </button>
          </div>  
-         
+            
+        
          </div>
   )
 }

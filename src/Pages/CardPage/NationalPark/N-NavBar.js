@@ -2,9 +2,11 @@ import React from 'react'
 import { BsCreditCard, BsSearch } from 'react-icons/bs'
 import { useNavigate } from 'react-router'
 import img2 from './img2.jpg'
-import './NavBar.css'
+import './N-NavBar.css'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
-import HomePage from '../HomePage/HomePage'
+import HomePage from '../../HomePage/HomePage'
+import UserAccount from '../../UserAccount/UserAccount'
+
 
 function NavBar() {
   const navigate=useNavigate()
@@ -12,6 +14,13 @@ function NavBar() {
   const navigateToHome = () => {
   
     navigate("/");
+  };
+
+ 
+
+  const navigateToUserAccount = () => {
+  
+    navigate('/user');
   };
 
   return (
@@ -26,7 +35,11 @@ function NavBar() {
         <div className="NavBar-icons">
         <BsSearch className='NavBar-icon1' size={22}/> 
         <BsCreditCard className='NavBar-credit' size={22}  />
-        <img src={img2} className='useravatar' />
+        <img onClick={navigateToUserAccount} src={img2} className='useravatar' />
+        <Routes>
+      <Route path='UserAccount' element={<UserAccount />}>
+      </Route>
+      </Routes>
         </div>
         <div className='shadow'></div>
     </div>

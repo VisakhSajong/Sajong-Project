@@ -3,6 +3,7 @@ import Footer from './Pages/HomePage/Footer'
 import HomePage from './Pages/HomePage/HomePage'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import UserAccount from './Pages/UserAccount/UserAccount'
+import NationalPark from './Pages/CardPage/NationalPark/NationalPark'
 
 
 function App() {
@@ -15,7 +16,11 @@ function App() {
       </Route>
       </Routes>
       <Routes>
-      <Route exact path='user' element={<UserAccount />}>
+      <Route path='user' element={<UserAccount />}>
+      </Route>
+      </Routes>
+      <Routes>
+      <Route path='Park' element={<NationalPark />}>
       </Route>
       </Routes>
       </Router>

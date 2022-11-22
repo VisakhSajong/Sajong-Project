@@ -34,7 +34,7 @@ function Section() {
 
           {/* Second Section  */}
 
-    <div className="section2">
+    <div className="homesection2">
     <h6 className='h6'>SEASONAL SUGGESTIONS</h6>
     <h1 className='h6s'>Where to Next?</h1>
         <BsFillArrowLeftSquareFill className='sectionIcon' />

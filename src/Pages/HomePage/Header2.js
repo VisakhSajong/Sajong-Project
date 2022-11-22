@@ -1,8 +1,10 @@
 import React from 'react'
 import { BsBuilding, BsClock, BsCreditCard } from 'react-icons/bs'
+
 import './Header2.css'
 
 function Header2() {
+  
   return (
     <div className='header2-main'>
         <div className="header2-icons">

@@ -22,7 +22,7 @@
     margin-top: 18px;
 }
 
-.section1{
+.usersection1{
     width: 29%;
 }
 
@@ -37,15 +37,16 @@
     display: flex;
     flex-wrap: nowrap;
     align-content: center;
+    margin-right: 3rem;
 }
 
-.section2{
+.usersection2{
     margin-left: 2rem;
     margin-top: 1rem;
 }
 
-.section2-p{
-    margin-left: 49rem;
+.usersection2-p{
+    margin-left: 47rem;
 }
 
 .user-details{
@@ -56,24 +57,24 @@
     margin-left: 3rem;
 }
 
-.section2-h6{
+.usersection2-h6{
     margin-left: 7rem;
 }
 
-.section2-h7{
+.usersection2-h7{
     margin-left: 10rem;
 }
 
 
-.section2-p1{
+.usersection2-p1{
     margin-left: 4rem
 }
 
-.section2-p2{
+.usersection2-p2{
     margin-left: 7rem;
 }
 
-.section2-p3{
+.usersection2-p3{
     margin-left: 3rem;
 }
 
@@ -87,60 +88,51 @@
 
                         /* section-icons */
 
-                        .section2-main {
+                        .usersection2-main {
                             margin-top: -11rem;
                             margin-left: 9rem;
                         }
                         
-                        .section2-icons {
+                        .usersection2-icons {
                             padding-left: 356px;
                             padding-top: 178px;
                         }
                         
-                        .section-icon{
-                            margin-left: 13rem; 
-                        }
                         
-                        .section-icon2{
-                            margin-left: 17rem;
-                        }
-                        .section-icon3{
-                            margin-left: 17rem;
-                        }
-                        
-                        .section2-content1{
+                        .usersection2-content1{
                             margin-left: 20rem;
                             margin-top: 1.2rem;
                         }
-                        .section2-content11{
+                        .usersection2-content11{
                             margin-left: 18rem;
                         }
                        
-                        .section2-content2{
+                        .usersection2-content2{
                             margin-left: 41rem;
                             margin-bottom: 8px;
                             margin-top: -9rem;
                         }
-                        .section2-content22{
+                        .usersection2-content22{
                             margin-left: 41rem;
                         }
                        
                         
                         
-                        .section2-content3{
+                        .usersection2-content3{
                             margin-left: 62rem;
                             margin-bottom: 8px;
                             margin-top: -8rem;
                         }
                         
-                        .section2-content33{
+                        .usersection2-content33{
                             margin-left: 62rem;
                         }
-                    .section2-card1{
+                    .usersection2-card1{
                         margin-left: 20rem;
                         margin-top: -12rem;
                         }
-                        .section2-card2{
+                        .usersection2-card2{
                             margin-left: 40rem;
                             margin-top: -12rem;
                             }
+
