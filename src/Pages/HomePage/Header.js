@@ -42,7 +42,7 @@ function Header() {
           <div className="icons">
         <BsSearch className='icon1' size={30}/> 
        <BsFillCreditCardFill className='credit' size={30} color='white' />      {/* onClick={handleClick} */}
-       <img onClick={navigateToUser} src={img2} className='avatar' />
+       <img onClick={navigateToUser} src={img2} className='avatar' alt='' />
        <Routes>
       <Route  path='UserAccount' element={<UserAccount />}>
       </Route>
@@ -53,15 +53,14 @@ function Header() {
     <h4 className='text1'>Dot we make your trips <br /> more memorable...</h4>
   </div>
       <div className="input3">
-    <Form className="input4" >
+    <div className="input4" >
     <Form.Control
               type="search"
               placeholder="Where are you Going"
               className="me-2"
               aria-label="Search"
             />
-           <IconButton icon={<Search />} color="red" 
-                appearance="primary" className='icon3'  />
+              <div className="Hdropdown">
                   <Dropdown>
       <Dropdown.Toggle variant="light" id="dropdown-basic">
         Choose Destination
@@ -74,7 +73,8 @@ function Header() {
         <Dropdown.Item href="#/action-5">Kabini</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
-          </Form>
+          </div>
+          </div>
           </div>
     
         <div className='button3'>

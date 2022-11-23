@@ -1,9 +1,23 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
 import { BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill, BsFillStarFill } from 'react-icons/bs'
+import { useNavigate } from 'react-router-dom'
+import NationalPark from '../CardPage/NationalPark/NationalPark'
 import './Section.css'
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 
 function Section() {
+
+//  const handleClick =()=>{
+//     console.log("Clicked");
+//   }
+
+  const navigate=useNavigate()
+
+  const navigateToPark = () => {
+  
+    navigate("/park");
+  };
   return (
                           // First Section 
 
@@ -12,9 +26,13 @@ function Section() {
         <BsFillArrowLeftSquareFill className='sectionIcon' />
         <BsFillArrowRightSquareFill className='sectionIcon1'/>
         <div className="section-card">
-      <Card  className='section-card1'>
-      <Card.Img variant="top" src="https://images.unsplash.com/photo-1623995523843-f282cd8aa1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a2FybmF0YWthJTIwdGlnZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+      <Card onClick={navigateToPark}  className='section-card1'>
+      <Card.Img  variant="top" src="https://images.unsplash.com/photo-1623995523843-f282cd8aa1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a2FybmF0YWthJTIwdGlnZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
     </Card>
+    <Routes>
+      <Route path='Park' element={<NationalPark />}>
+      </Route>
+      </Routes>
     <Card className='section-card2'>
       <Card.Img variant="top" src="https://images.unsplash.com/photo-1568454537842-d933259bb258?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dHJla2tpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
     </Card>
@@ -40,7 +58,7 @@ function Section() {
         <BsFillArrowLeftSquareFill className='sectionIcon' />
         <BsFillArrowRightSquareFill className='sectionIcon1'/>
         <div className="section2-card">
-      <Card  className='section2-card1'>
+      <Card className='section2-card1'>
       <Card.Img variant="top" src="https://plus.unsplash.com/premium_photo-1661962740957-ccd5130e194e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aGltYWNoYWwlMjBwcmFkZXNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
     </Card>
     <Card className='section2-card2'>
@@ -112,13 +130,13 @@ function Section() {
     <p className='s4-r4'>₹4679/night</p>
     
     </div>
-    <BsFillStarFill className='rate1'  />
+    <BsFillStarFill className='review1'  />
     <p className='p1'>(70 Reviews)</p> 
-    <BsFillStarFill className='rate2'  />
+    <BsFillStarFill className='review2'  />
     <p className='p2'>(70 Reviews)</p> 
-    <BsFillStarFill className='rate3'  />
+    <BsFillStarFill className='review3'  />
     <p className='p3'>(70 Reviews)</p> 
-    <BsFillStarFill className='rate4'  />
+    <BsFillStarFill className='review4'  />
     <p className='p4'>(70 Reviews)</p> 
     </div>
     <div className='section4-button'>

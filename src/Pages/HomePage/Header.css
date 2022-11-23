@@ -29,9 +29,9 @@
     margin-left: 1.4rem;
     border-radius: 24px!important;
 }
-.dropdown{
-    margin-left: 35px;
-    margin-top: 10px;
+.Hdropdown{
+    margin-left: 74rem;
+    margin-top: 2rem;
 }
 
 .search {
@@ -59,11 +59,8 @@
     margin-top: 53px;
 }
 .icon3{
-    padding-top: 1rem;
-    border-radius: 142px;
-    width: 51px;
-    padding-left: 10px;
-    margin-left: 3px;  
+    margin-left: 39rem;
+    border-radius: 2rem;
 }
 
 .avatar {
@@ -115,7 +112,7 @@ display: flex;
     width: 6rem;
 }
 .input4 .me-2 {
-    margin-right: -1.5rem!important;
+    margin-right: -72.5rem!important;
 }
 .bname{
     font-size: 0.8rem;

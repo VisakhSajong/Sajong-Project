@@ -1,4 +1,148 @@
 
-.N-icons1{margin-left: 1rem;
-font-size: 4rem;
+.N-icons1{
+    margin-left: 1rem;
+        font-size: 4rem;
+    margin-top: 2rem;
+        }
+.Nsection-main{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    margin-top: 2rem;
+}
+.N-section{
+    width: 55%;
+}
+
+.Nsection-card{
+    margin-left: 4rem;
+    margin-top: 3rem;
+    display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+
+.Nsection-card1{
+    margin-left: 0rem;
+    width: 12rem;
+    height: 14rem !important;
+    border-radius: 2.375rem !important;
+    /* box-shadow: 5px 5px 5px 5px white; */
+
+}
+
+.Nsection-card2{
+    margin-left: 4rem;
+    width: 12rem;
+    border-radius: 2.375rem !important;
+}
+
+.Nsection-card3{
+    margin-left: 4rem;
+    width: 12rem;
+    border-radius: 2.375rem !important;
+}
+
+
+.Nsection-cardNames{
+    display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  margin-top: 1.2rem;
+  white-space: nowrap;
+  
+}
+.Ns-cards1{
+    margin-left: 4rem;
+    border-radius: 10px;
+}
+.Ns-cards2{
+    margin-left: 3.8rem;
+}
+.Ns-cards3{
+    margin-left: 5.3rem;
+}
+
+
+.Nsection-cardNames2{
+    display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+    font-size: 1rem;
+}
+
+.Ns-p1{
+    margin-left: 4rem;
+}
+.Ns-p2{
+    margin-left: 1rem;
+    margin-top: 0rem;
+}
+.Ns-p3{
+    margin-left: 0rem;
+    margin-top: 0rem;
+}
+
+
+
+ .Nreview1{
+    margin-left: 18rem;
+    margin-top: -6rem;
+    font-size: 14px;
+    color: #ff3b00;
+} 
+
+.Nreview2{
+    margin-left: 35rem;
+    margin-top: -5rem;
+    font-size: 14px;
+    color: #ff3b00;
+} 
+.Nreview3{
+    margin-left: 50.6rem;
+    margin-top: -5rem;
+    font-size: 14px;
+    color: #ff3b00;
+} 
+
+
+ .Np1{
+    margin-top: -71px;
+    margin-left: 305px;
+} 
+
+.Np2{
+     margin-top: -63px;
+     margin-left: 36rem;
+} 
+
+.Np3{
+    margin-top: -63px;
+    margin-left: 51.6rem;
+} 
+
+
+.Nh6s{
+    margin-left: 4rem; 
+    margin-top: 3rem;  
+}
+
+.Nh6{
+    font-size: 0.7rem;
+    margin-left: 4rem;
+}
+.Ndropdown {
+    margin-left: 38rem;
+    margin-top: -4rem;
+    border-radius: 17rem !important;
+}
+
+.gmap_iframe{
+    width: 42rem;
+    height: 67rem;
+}
+
+.review-main {
+    margin-top: 2rem;
+    margin-left: -14rem;
 }
