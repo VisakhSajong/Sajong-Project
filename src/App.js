@@ -1,9 +1,10 @@
 import React from 'react'
-import Footer from './Pages/HomePage/Footer'
+// import Footer from './Pages/HomePage/Footer'
 import HomePage from './Pages/HomePage/HomePage'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import UserAccount from './Pages/UserAccount/UserAccount'
 import NationalPark from './Pages/CardPage/NationalPark/NationalPark'
+import Login from './Pages/Login/Login'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Route exact path='/' element={<HomePage />}>
       </Route>
       </Routes>
+      
       <Routes>
       <Route path='user' element={<UserAccount />}>
       </Route>
@@ -23,8 +25,13 @@ function App() {
       <Route path='Park' element={<NationalPark />}>
       </Route>
       </Routes>
+      <Routes>
+      <Route path='login' element={<Login />}>
+      </Route>
+      </Routes>
       </Router>
-    <Footer />
+      
+    {/* <Footer /> */}
     </div>
   )
 }
