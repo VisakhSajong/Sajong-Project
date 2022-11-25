@@ -1,9 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import UserAccount from '../UserAccount/UserAccount';
 import './Login.css';
 
+// getting the values of session storage
+const getDatafromLS=()=>{
+  const data = sessionStorage.getItem('token-info');
+  if(data){
+    return JSON.parse(data);
+  }
+  else{
+    return []
+  }
+}
 
 function Login() {
+  const [user, setUser]=useState(getDatafromLS());
+  const[userid,setUserid]=useState('')
   const [email,setEmail]=useState('')
   const [password,setPassword]=useState('')
   const [isLoggedin, setIsLoggedin] = useState(false);
@@ -12,27 +24,47 @@ function Login() {
     e.preventDefault();
     console.log( email, password);
     const userData = {
-      
+      userid,
       email,
       password,
     };
-    sessionStorage.setItem('token-info', JSON.stringify(userData));
+    setUser([...user,userData]);
     setIsLoggedin(true);
-  
+    setUserid('')
     setEmail('');
     setPassword('');
   };
- 
-  const logout = () => {
-    sessionStorage.removeItem('token-info');
+  
+  useEffect(() => {
+    sessionStorage.setItem('token-info', JSON.stringify(user));
+    
+  }, [user])
+  
+  const logout = (userid) => {
+    // sessionStorage.removeItem('token-info');
+    const filteredUser=user.filter((e,index)=>{
+      return e.userid !== index
+    })
+    setUser(filteredUser);
     setIsLoggedin(false);
   };
   return (
-    <div className=''>
+    <div className='log-main'>
       { !isLoggedin ? "" :<button className='login-button' onClick={logout}>logout user</button> }
    {!isLoggedin  ? ( <div className="loginParentDiv">
         <img width="200px" height="200px" src="https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png" alt=''></img>
         <form>
+        <label htmlFor="fname">User ID</label>
+          <br />
+          <input
+            className="input"
+            type="text"
+            id="fname"
+            onChange={(e)=>setUserid(e.target.value)}
+            name="User ID"
+            value={userid}
+          />
+          <br />
           <label htmlFor="fname">Email</label>
           <br />
           <input
