@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Button, Dropdown, Form } from 'react-bootstrap'
 import './Header.css'
 import { BsFillCreditCardFill, BsSearch} from "react-icons/bs";
-import { Search } from '@rsuite/icons';
+// import { Search } from '@rsuite/icons';
 import "rsuite/dist/rsuite.min.css";
-import { IconButton } from "rsuite";
-import image from './image.jpg'
+// import { IconButton } from "rsuite";
+// import image from './image.jpg'
 import img2 from './img2.jpg'
 import { useNavigate } from 'react-router-dom';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import UserAccount from '../UserAccount/UserAccount';
+import axios from 'axios';
+import { useState } from 'react';
 
 
 
@@ -18,6 +20,8 @@ function Header() {
   // const handleClick =()=>{
   //   console.log("Clicked");
   // }
+  const [data, setData] = useState();
+
 
   const navigate=useNavigate()
 
@@ -26,9 +30,22 @@ function Header() {
     navigate("/user");
   };
 
+     useEffect(() => {
+      
+        axios.get("https://jsonplaceholder.typicode.com/photos").then((Response)=>{
+          console.log(Response.data);
+        setData(Response.data[0])
+         
+        })
+          
+        
+     }, [])
+     
+      
+
   return (
     <div className='header'>
-      <img className='header-images' src={image} alt="images" />
+      <img className='header-images' src={data ? data.url : ""} alt="images" />
       <div className='header-images2'>
         <img className="img2" src={img2} alt="" />
         </div>
@@ -49,7 +66,7 @@ function Header() {
       </Routes>
         </div>
     <div className='text'>
-    <h1>India's new <br /> trip planner</h1><br />
+   <h1>{data ? data.title : ""} <br /> trip planner</h1><br />
     <h4 className='text1'>Dot we make your trips <br /> more memorable...</h4>
   </div>
       <div className="input3">
