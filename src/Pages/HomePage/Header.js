@@ -32,9 +32,9 @@ function Header() {
 
      useEffect(() => {
       
-        axios.get("https://jsonplaceholder.typicode.com/photos").then((Response)=>{
-          console.log(Response.data);
-        setData(Response.data[0])
+        axios.get("https://mygreenkitchen.in/mgkapi/mgkhome").then((Response)=>{
+          // console.log(Response.data);
+        setData(Response.data)
          
         })
           
@@ -45,7 +45,7 @@ function Header() {
 
   return (
     <div className='header'>
-      <img className='header-images' src={data ? data.url : ""} alt="images" />
+      <img className='header-images' src={data ? data.banners[0].url : ""} alt="images" />
       <div className='header-images2'>
         <img className="img2" src={img2} alt="" />
         </div>
@@ -66,7 +66,7 @@ function Header() {
       </Routes>
         </div>
     <div className='text'>
-   <h1>{data ? data.title : ""} <br /> trip planner</h1><br />
+   <h1>{data ? data.banners[0].title : ""} <br /> trip planner</h1><br />
     <h4 className='text1'>Dot we make your trips <br /> more memorable...</h4>
   </div>
       <div className="input3">

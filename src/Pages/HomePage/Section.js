@@ -1,16 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Card } from 'react-bootstrap'
 import { BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill, BsFillStarFill } from 'react-icons/bs'
 import { useNavigate } from 'react-router-dom'
 import NationalPark from '../CardPage/NationalPark/NationalPark'
 import './Section.css'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+import axios from 'axios'
 
 function Section() {
 
+  const [data, setData] = useState();
+  const [sectionData, setSectionData] = useState([]);
 //  const handleClick =()=>{
 //     console.log("Clicked");
 //   }
+
+  useEffect(() => {
+      
+  axios.get("https://mygreenkitchen.in/mgkapi/mgkhome").then((Response)=>{
+    // console.log(Response.data);
+  setData(Response.data)
+  setSectionData(Response.data.exclussive_products) 
+  // console.log(Response.data.exclussive_products);
+  })
+    
+  
+}, [])
 
   const navigate=useNavigate()
 
@@ -22,18 +37,19 @@ function Section() {
                           // First Section 
 
     <div className='section'>
-        <h1 className='h6s'>What's Next?</h1>
+        <h1 className='h6s'>{data ? data.banners[0].title : ""}</h1>
         <BsFillArrowLeftSquareFill className='sectionIcon' />
         <BsFillArrowRightSquareFill className='sectionIcon1'/>
         <div className="section-card">
-      <Card onClick={navigateToPark}  className='section-card1'>
-      <Card.Img  variant="top" src="https://images.unsplash.com/photo-1623995523843-f282cd8aa1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a2FybmF0YWthJTIwdGlnZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+        {sectionData.map((obj, index) => (
+          
+      <Card key={index} onClick={navigateToPark}  className='section-card1'>
+      <Card.Img  variant="top" src={obj.images[0]} />
     </Card>
-    <Routes>
-      <Route path='Park' element={<NationalPark />}>
-      </Route>
-      </Routes>
-    <Card className='section-card2'>
+))}
+    </div>
+
+    {/* <Card className='section-card2'>
       <Card.Img variant="top" src="https://images.unsplash.com/photo-1568454537842-d933259bb258?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dHJla2tpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
     </Card>
     <Card className='section-card3'>
@@ -41,8 +57,8 @@ function Section() {
     </Card>
     <Card className='section-card4'>
       <Card.Img variant="top" src="https://images.unsplash.com/photo-1576604303800-f2435c2db6bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhvbmV5bW9vbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
-      </Card>
-    </div>
+      </Card> */}
+    
     <div className='section-cardNames'>
     <h3 className='s-cards1'>National Parks</h3>
     <h3 className='s-cards2'>Trekking</h3>
@@ -158,6 +174,10 @@ function Section() {
   <div className='section5-button3'>
     <button className='section5-button4'>View More Stories</button>
     </div>
+    <Routes>
+      <Route path='Park' element={<NationalPark />}>
+      </Route>
+      </Routes>
     </div>
   )
 }
