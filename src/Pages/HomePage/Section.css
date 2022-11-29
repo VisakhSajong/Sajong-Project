@@ -142,7 +142,6 @@
 }
 
 .section3{
-    background-image:url('tiger.jpg');
     width: 75%;
     height: 450px;
     background-size: cover ;
@@ -153,14 +152,15 @@
     border-radius: 2rem;
 }
 
-.text{
+.section3-text{
     color: white;
-    margin-left: 114px;
-    padding-top: 5rem;
     font-size: 4.1rem;
+    margin-left: 21rem;
+    margin-top: -27rem;
 }
+
 .section3-button{
-    margin-left: 134px;
+    margin-left: 21rem;
 }
 .section3-button1{
     background-color: rgb(48, 34, 34);

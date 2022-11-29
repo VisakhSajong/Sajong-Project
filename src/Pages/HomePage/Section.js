@@ -11,6 +11,7 @@ function Section() {
 
   const [data, setData] = useState();
   const [sectionData, setSectionData] = useState([]);
+  const [sectionData1, setSectionData1] = useState([]);
 //  const handleClick =()=>{
 //     console.log("Clicked");
 //   }
@@ -22,6 +23,7 @@ function Section() {
   setData(Response.data)
   setSectionData(Response.data.exclussive_products) 
   // console.log(Response.data.exclussive_products);
+  setSectionData1(Response.data.packed_products)
   })
     
   
@@ -37,6 +39,7 @@ function Section() {
                           // First Section 
 
     <div className='section'>
+      <h6 className='h61'>LET US PLAN FOR YOU</h6>
         <h1 className='h6s'>{data ? data.banners[0].title : ""}</h1>
         <BsFillArrowLeftSquareFill className='sectionIcon' />
         <BsFillArrowRightSquareFill className='sectionIcon1'/>
@@ -60,35 +63,43 @@ function Section() {
       </Card> */}
     
     <div className='section-cardNames'>
-    <h3 className='s-cards1'>National Parks</h3>
-    <h3 className='s-cards2'>Trekking</h3>
-    <h3 className='s-cards3'>Hill Station</h3>
-    <h3 className='s-cards4'>Honey Moon</h3>
+    <h3 className='s-cards1'>{data ? data.exclussive_products[0].title : ""}</h3>
+    <h3 className='s-cards2'>{data ? data.exclussive_products[1].title : ""}</h3>
+    <h3 className='s-cards3'>{data ? data.exclussive_products[2].title : ""}</h3>
+    <h3 className='s-cards4'>{data ? data.exclussive_products[3].title : ""}</h3>
     </div>
 
           {/* Second Section  */}
 
     <div className="homesection2">
     <h6 className='h6'>SEASONAL SUGGESTIONS</h6>
-    <h1 className='h6s'>Where to Next?</h1>
+    <h1 className='h6s'>{data ? data.packed_products[0].title : ""}</h1>
         <BsFillArrowLeftSquareFill className='sectionIcon' />
         <BsFillArrowRightSquareFill className='sectionIcon1'/>
         <div className="section2-card">
-      <Card className='section2-card1'>
-      <Card.Img variant="top" src="https://plus.unsplash.com/premium_photo-1661962740957-ccd5130e194e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aGltYWNoYWwlMjBwcmFkZXNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+     
+
+      { sectionData1.map((obj,index)=>{
+      return (
+        <div key={index}>
+           <Card  className='section2-card1'>
+      <Card.Img variant="top" src={obj.images[0]} />
     </Card>
-    <Card className='section2-card2'>
+        </div>
+      )
+      })}
+    {/* <Card className='section2-card2'>
       <Card.Img variant="top" src="https://plus.unsplash.com/premium_photo-1661962740957-ccd5130e194e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aGltYWNoYWwlMjBwcmFkZXNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
     </Card>
     <Card className='section2-card3'>
       <Card.Img variant="top" src="https://plus.unsplash.com/premium_photo-1661962740957-ccd5130e194e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aGltYWNoYWwlMjBwcmFkZXNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
-    </Card>
+    </Card> */}
     </div>
     </div>
     <div className='section2-cardNames'>
-    <h3 className='s2-cards1'>Himachal Pradesh</h3>
-    <h3 className='s2-cards2'>Ooty</h3>
-    <h3 className='s2-cards3'>Manali</h3>
+    <h3 className='s2-cards1'>{data ? data.packed_products[0].title : ""}</h3>
+    <h3 className='s2-cards2'>{data ? data.packed_products[1].title : ""}</h3>
+    <h3 className='s2-cards3'>{data ? data.packed_products[2].title : ""}</h3>
     
     </div>
     <div className='section2-button'>
@@ -97,10 +108,10 @@ function Section() {
 
              {/* Third Section  */}
 
-    <div className="section3">
-
+    <div className="section3-main">
+    <img className='section3' src={data ? data.banners[1].url : ""} alt="images" />
   
-    <div className='text'>
+    <div className='section3-text'>
    <p> More about Dot  <br /> Membership <br />Card.</p>
   </div>
       <div className="section3-button">

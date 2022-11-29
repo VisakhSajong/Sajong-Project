@@ -24,7 +24,7 @@ function Header2() {
       <h4 className='header2-content3'>Manage You Dot Card</h4>
       <p className='header2-content33'>Find more facilities and points by <br />using Dot Card</p>
       <button className='header2-button3'>Book Now</button>
-      <h6 className='h61'>LET US PLAN FOR YOU</h6>
+      
       </div>
       
     </div>
