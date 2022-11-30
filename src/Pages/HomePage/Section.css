@@ -187,9 +187,9 @@
 
 .section4-card1{
     margin-left: 0rem;
-    width: 26rem;
-    height: 1rem;
-    border-radius: 2.375rem !important;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 20px !important;
     /* box-shadow: 5px 5px 5px 5px white; */
 
 }

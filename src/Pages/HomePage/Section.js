@@ -12,6 +12,7 @@ function Section() {
   const [data, setData] = useState();
   const [sectionData, setSectionData] = useState([]);
   const [sectionData1, setSectionData1] = useState([]);
+  const [sectionData2, setSectionData2] = useState([]);
 //  const handleClick =()=>{
 //     console.log("Clicked");
 //   }
@@ -23,7 +24,8 @@ function Section() {
   setData(Response.data)
   setSectionData(Response.data.exclussive_products) 
   // console.log(Response.data.exclussive_products);
-  setSectionData1(Response.data.packed_products)
+  setSectionData1(Response.data.packed_products);
+  setSectionData2(Response.data.farmfresh_products)
   })
     
   
@@ -63,10 +65,15 @@ function Section() {
       </Card> */}
     
     <div className='section-cardNames'>
-    <h3 className='s-cards1'>{data ? data.exclussive_products[0].title : ""}</h3>
-    <h3 className='s-cards2'>{data ? data.exclussive_products[1].title : ""}</h3>
+    {sectionData.map((obj, index) => ( 
+      <div key={index}>
+    <h3 className='s-cards1'>{obj.title}</h3>
+    </div>
+    ))}
+
+    {/* <h3 className='s-cards2'>{data ? data.exclussive_products[1].title : ""}</h3>
     <h3 className='s-cards3'>{data ? data.exclussive_products[2].title : ""}</h3>
-    <h3 className='s-cards4'>{data ? data.exclussive_products[3].title : ""}</h3>
+    <h3 className='s-cards4'>{data ? data.exclussive_products[3].title : ""}</h3> */}
     </div>
 
           {/* Second Section  */}
@@ -98,8 +105,8 @@ function Section() {
     </div>
     <div className='section2-cardNames'>
     <h3 className='s2-cards1'>{data ? data.packed_products[0].title : ""}</h3>
-    <h3 className='s2-cards2'>{data ? data.packed_products[1].title : ""}</h3>
-    <h3 className='s2-cards3'>{data ? data.packed_products[2].title : ""}</h3>
+    {/* <h3 className='s2-cards2'>{data ? data.packed_products[1].title : ""}</h3>
+    <h3 className='s2-cards3'>{data ? data.packed_products[2].title : ""}</h3> */}
     
     </div>
     <div className='section2-button'>
@@ -121,13 +128,17 @@ function Section() {
             {/* Fourth Section  */}
 
     <div className="section4">
-    <h6 className='h6'>DOT EXCLUSIVE</h6>
-    <h1 className='h6s'>Discover Travel Memories</h1>
+    <h6 className='h6'>SEASONAL SUGGESTIONS</h6>
+    <h1 className='h6s'>Where To Next?</h1>
     <div className="section4-card">
-      <Card  className='section4-card1'>
-      <Card.Img style={{ borderRadius: '29px'}} variant="top" src="https://images.unsplash.com/photo-1623995523843-f282cd8aa1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a2FybmF0YWthJTIwdGlnZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+    {sectionData2.map((obj, index) => (
+      <div key={index}>
+    <Card  className='section4-card1'>
+      <Card.Img className='section4-card1' style={{ borderRadius: '20px'}} variant="top" src={obj.images[0]} />
     </Card>
-    <Card className='section4-card2'>
+    </div>
+     ))}
+    {/* <Card className='section4-card2'>
       <Card.Img style={{ borderRadius: '29px'}} variant="top" src="https://images.unsplash.com/photo-1568454537842-d933259bb258?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dHJla2tpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
     </Card>
     <Card className='section4-card3'>
@@ -135,7 +146,7 @@ function Section() {
     </Card>
     <Card className='section4-card4'>
       <Card.Img style={{ borderRadius: '29px'}} variant="top" src="https://images.unsplash.com/photo-1576604303800-f2435c2db6bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhvbmV5bW9vbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
-      </Card>
+      </Card> */}
     </div>
     <div className='section4-cardNames'>
     <h4 className='s4-cards1'>Wanderlust Hampi</h4>

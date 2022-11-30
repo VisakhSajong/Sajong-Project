@@ -5,6 +5,7 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import UserAccount from './Pages/UserAccount/UserAccount'
 import NationalPark from './Pages/CardPage/NationalPark/NationalPark'
 import Login from './Pages/Login/Login'
+import Karnataka from './Pages/Karnataka/Karnataka'
 
 
 function App() {
@@ -27,6 +28,10 @@ function App() {
       </Routes>
       <Routes>
       <Route path='login' element={<Login />}>
+      </Route>
+      </Routes>
+      <Routes>
+      <Route path='karnataka' element={<Karnataka />}>
       </Route>
       </Routes>
       </Router>

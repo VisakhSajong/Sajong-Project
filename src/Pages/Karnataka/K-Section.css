@@ -1,0 +1,181 @@
+
+.K-icons1{
+    margin-left: 1rem;
+        font-size: 4rem;
+    margin-top: 2rem;
+        }
+.Ksection-main{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    margin-top: 2rem;
+}
+/* .K-section{
+   
+} */
+
+.Ksection-card{
+    margin-left: 4rem;
+    margin-top: 3rem;
+    display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+
+.Ksection-card1{
+    height: 18rem;
+    width: 20rem;
+    border-radius: 16px !important;
+    /* box-shadow: 5px 5px 5px 5px white; */
+
+}
+
+.Ksection-card2{
+    margin-left: 5rem;
+    height: 18rem;
+    width: 20rem;
+    border-radius: 16px !important;
+}
+
+.Ksection-card3{
+    margin-left: 5rem;
+    height: 18rem;
+    width: 20rem;
+    border-radius: 16px !important;
+}
+
+.Ksection-card4{
+    margin-left: 5rem;
+    height: 18rem;
+    width: 20rem;
+    border-radius: 16px !important;
+}
+
+
+.Ksection-cardNames{
+    display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  margin-top: 1.2rem;
+  white-space: nowrap;
+  
+}
+.Ks-cards1{
+    margin-left: 4rem;
+    font-size: 1rem;
+}
+.Ks-cards2{
+    margin-left: 4rem;
+    font-size: 1rem;
+}
+.Ks-cards3{
+    margin-left: 4rem;
+    font-size: 1rem;
+}
+.Ks-cards4{
+    margin-left: 4rem;
+    font-size: 1rem;
+}
+
+
+.Ksection-cardNames2{
+    display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+    font-size: 1rem;
+}
+
+.Ks-p1{
+    margin-left: 4rem;
+}
+.Ks-p2{
+    margin-left: 12rem;
+    margin-top: 0rem;
+}
+.Ks-p3{
+    margin-left: 11rem;
+    margin-top: 0rem;
+}
+.Ks-p4{
+    margin-left: 11rem;
+    margin-top: 0rem;
+}
+
+
+
+ .Kreview1{
+    margin-left: 18rem;
+    margin-top: -6rem;
+    font-size: 14px;
+    color: #ff3b00;
+} 
+
+.Kreview2{
+    margin-left: 42rem;
+    margin-top: -5rem;
+    font-size: 14px;
+    color: #ff3b00;
+} 
+.Kreview3{
+    margin-left: 67.6rem;
+    margin-top: -5rem;
+    font-size: 14px;
+    color: #ff3b00;
+} 
+.Kreview4{
+    margin-left: 90.6rem;
+    margin-top: -5rem;
+    font-size: 14px;
+    color: #ff3b00;
+} 
+
+
+ .Kp1{
+    margin-top: -71px;
+    margin-left: 305px;
+} 
+
+.Kp2{
+     margin-top: -63px;
+     margin-left: 43rem;
+} 
+
+.Kp3{
+    margin-top: -63px;
+    margin-left: 68.6rem;
+} 
+.Kp4{
+    margin-top: -63px;
+    margin-left: 91.6rem;
+} 
+
+
+.Kh6s{
+    margin-left: 4rem; 
+    margin-top: 3rem;  
+}
+
+.Kh6{
+    font-size: 0.7rem;
+    margin-left: 4rem;
+}
+.Kdropdown {
+    margin-left: 78rem;
+    margin-top: -4rem;
+    border-radius: 17rem !important;
+}
+
+
+.Kreview-main {
+    margin-top: 2rem;
+    margin-left: -14rem;
+}
+
+.Kbutton{
+    margin-left: 61rem;
+    margin-top: -4rem;
+}
+
+.K-sectionCardMain{
+    margin-left: 2rem;
+}

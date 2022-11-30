@@ -17,9 +17,9 @@ import { useState } from 'react';
 
 function Header() {
 
-  // const handleClick =()=>{
-  //   console.log("Clicked");
-  // }
+  const handleClick =()=>{
+    console.log("Clicked");
+  }
   const [data, setData] = useState();
 
 
@@ -34,11 +34,8 @@ function Header() {
       
         axios.get("https://mygreenkitchen.in/mgkapi/mgkhome").then((Response)=>{
           // console.log(Response.data);
-        setData(Response.data)
-         
-        })
-          
-        
+        setData(Response.data)  
+        })    
      }, [])
      
       
@@ -57,7 +54,7 @@ function Header() {
      className='button'>More Destination Camps</Button> 
      </div>    
           <div className="icons">
-        <BsSearch className='icon1' size={30}/> 
+        <BsSearch onClick={handleClick} className='icon1' size={30}/> 
        <BsFillCreditCardFill className='credit' size={30} color='white' />      {/* onClick={handleClick} */}
        <img onClick={navigateToUser} src={img2} className='avatar' alt='' />
        <Routes>
@@ -116,7 +113,6 @@ function Header() {
       </button>
          </div>  
             
-        
          </div>
   )
 }
