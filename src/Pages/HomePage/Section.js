@@ -24,12 +24,10 @@ function Section() {
   setData(Response.data)
   setSectionData(Response.data.exclussive_products) 
   // console.log(Response.data.exclussive_products);
-  setSectionData1(Response.data.packed_products);
+  setSectionData1(Response.data.packed_products)
   setSectionData2(Response.data.farmfresh_products)
   })
-    
-  
-}, [])
+  }, [])
 
   const navigate=useNavigate()
 
@@ -66,8 +64,8 @@ function Section() {
     
     <div className='section-cardNames'>
     {sectionData.map((obj, index) => ( 
-      <div key={index}>
-    <h3 className='s-cards1'>{obj.title}</h3>
+      <div key={index} className='s-cards1'>
+        {obj.title}
     </div>
     ))}
 
@@ -85,7 +83,6 @@ function Section() {
         <BsFillArrowRightSquareFill className='sectionIcon1'/>
         <div className="section2-card">
      
-
       { sectionData1.map((obj,index)=>{
       return (
         <div key={index}>
@@ -104,7 +101,13 @@ function Section() {
     </div>
     </div>
     <div className='section2-cardNames'>
-    <h3 className='s2-cards1'>{data ? data.packed_products[0].title : ""}</h3>
+    {sectionData1.map((obj,index)=>(
+      <div key={index}>
+    <h3 className='s2-cards1'>{obj.title}</h3>
+    </div>
+    ))
+      }
+
     {/* <h3 className='s2-cards2'>{data ? data.packed_products[1].title : ""}</h3>
     <h3 className='s2-cards3'>{data ? data.packed_products[2].title : ""}</h3> */}
     
@@ -149,10 +152,15 @@ function Section() {
       </Card> */}
     </div>
     <div className='section4-cardNames'>
-    <h4 className='s4-cards1'>Wanderlust Hampi</h4>
-    <h4 className='s4-cards2'>Waterfall GuestHouse</h4>
+    {sectionData2.map((obj,index)=>(
+      <div key={index} className='s4-cards1'>
+    {obj.title}
+    </div>
+    ))
+      }
+    {/* <h4 className='s4-cards2'>Waterfall GuestHouse</h4>
     <h4 className='s4-cards3'>WildStone Hampi</h4>
-    <h4 className='s4-cards4'>Hakuna Matuta Inn</h4>
+    <h4 className='s4-cards4'>Hakuna Matuta Inn</h4> */}
     </div>
     <div className='section4-cardNames2'>
     <p className='s4-p1'>3 Beds,2 Bedrooms</p>
@@ -184,8 +192,8 @@ function Section() {
     </div>
              {/* Fifth Section  */}
  <div className="section5">
-  <img src="https://images.unsplash.com/photo-1620766182966-c6eb5ed2b788?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFtcGl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="hampi" />
-  <img src="https://images.unsplash.com/photo-1620766182966-c6eb5ed2b788?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFtcGl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="hampi" className='section5-img' />
+  <img alt='' className='section5-img' src={data ? data.banners[1].url : ""} />
+  <img alt='' src={data ? data.exclussive_products[0].images : ''} className='section5-img1' />
 <p className='text5'> 14 Things to do   <br /> in Hampi</p>
   <button className='section5-button1'>Know More</button>
     <div className="section5-1">

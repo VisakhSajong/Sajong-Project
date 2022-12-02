@@ -10,14 +10,17 @@ import './K-Section.css'
 function Section() {
     const [data, setData] = useState();
     const [sectionData, setSectionData] = useState([]);
+    const [sectionData1, setSectionData1] = useState([]);
+    const [sectionData2, setSectionData2] = useState([]);
 
     useEffect(() => {
       
         axios.get("https://mygreenkitchen.in/mgkapi/mgkhome").then((Response)=>{
           // console.log(Response.data);
         setData(Response.data)
-
         setSectionData(Response.data.farmfresh_products)
+        setSectionData1(Response.data.new_products)
+        setSectionData2(Response.data.exclussive_products)
         })
     }, [])
 
@@ -34,6 +37,18 @@ function Section() {
       <BsBank className='K-icons1'/>
       <BsBank className='K-icons1'/>
       </div>
+      <div className="K-iconNames">
+        {sectionData1.map((obj,index)=>(
+          <div key={index} className='Ki6'>
+          {obj.title}
+          </div>
+        ))
+      
+        }
+      {/* <span className='Ki6'>Trekking</span>
+      <span className='Ki6'>National Parks</span>
+      <span className='Ki6'>National Parks</span> */}
+            </div>
       <div className="row Ksection-main">
     <div className="K-section">
     <h1 className='Kh6s'>{data ? data.banners[2].title : ""}</h1>
@@ -75,8 +90,8 @@ function Section() {
 
     <div className='Ksection-cardNames'>
     {sectionData.map((obj, index) => ( 
-        <div key={index}>
-    <h4 className='Ks-cards1'>{obj.title}</h4>
+        <div key={index} className='Ks-cards1'>
+      {obj.title}
     </div>
     ))}
 
@@ -101,24 +116,14 @@ function Section() {
     <p className='Kp4'>4.6(70 Reviews)</p> 
     </div>
     <div className="Ksection-card">
+    {sectionData2.map((obj, index) => ( 
+      <div key={index}> 
       <Card  className='Ksection-card1'>
-      <Card.Img style={{ borderRadius: '16px',height: '18rem',width: '20rem'}} variant="top" src="https://images.unsplash.com/photo-1623995523843-f282cd8aa1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a2FybmF0YWthJTIwdGlnZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
-    </Card>
-    <Card className='Ksection-card2'>
-      <Card.Img style={{ borderRadius: '16px',height: '18rem',width: '20rem'}} variant="top" src="https://images.unsplash.com/photo-1568454537842-d933259bb258?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dHJla2tpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
-    </Card>
-    <Card className='Ksection-card3'>
-      <Card.Img style={{ borderRadius: '16px',height: '18rem',width: '20rem'}} variant="top" src="https://images.unsplash.com/photo-1608825090252-a2163590fe08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
-    </Card>
-    <Card  className='Ksection-card4'>
-      <Card.Img style={{ borderRadius: '16px',height: '18rem',width: '20rem'}} variant="top" src="https://images.unsplash.com/photo-1623995523843-f282cd8aa1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a2FybmF0YWthJTIwdGlnZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+      <Card.Img style={{ borderRadius: '16px',height: '18rem',width: '20rem'}} variant="top" src={obj.images[0]} />
     </Card>
     </div>
-    <div className="Ksection-card">
-      <Card  className='Ksection-card1'>
-      <Card.Img style={{ borderRadius: '16px',height: '18rem',width: '20rem'}} variant="top" src="https://images.unsplash.com/photo-1623995523843-f282cd8aa1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a2FybmF0YWthJTIwdGlnZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
-    </Card>
-    <Card className='Ksection-card2'>
+    ))}
+    {/* <Card className='Ksection-card2'>
       <Card.Img style={{ borderRadius: '16px',height: '18rem',width: '20rem'}} variant="top" src="https://images.unsplash.com/photo-1568454537842-d933259bb258?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dHJla2tpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
     </Card>
     <Card className='Ksection-card3'>
@@ -126,7 +131,39 @@ function Section() {
     </Card>
     <Card  className='Ksection-card4'>
       <Card.Img style={{ borderRadius: '16px',height: '18rem',width: '20rem'}} variant="top" src="https://images.unsplash.com/photo-1623995523843-f282cd8aa1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a2FybmF0YWthJTIwdGlnZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+    </Card> */}
+    </div>
+    <div className='Ksection-cardNames'>
+    {sectionData2.map((obj, index) => ( 
+        <div key={index} className='Ks-cards1'>
+      {obj.title}
+    </div>
+    ))}
+    </div>
+    <div className="Ksection-card">
+    {sectionData2.map((obj, index) => ( 
+      <div key={index}> 
+      <Card  className='Ksection-card1'>
+      <Card.Img style={{ borderRadius: '16px',height: '18rem',width: '20rem'}} variant="top" src={obj.images[0]} />
     </Card>
+    </div>
+     ))}
+    {/* <Card className='Ksection-card2'>
+      <Card.Img style={{ borderRadius: '16px',height: '18rem',width: '20rem'}} variant="top" src="https://images.unsplash.com/photo-1568454537842-d933259bb258?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dHJla2tpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
+    </Card>
+    <Card className='Ksection-card3'>
+      <Card.Img style={{ borderRadius: '16px',height: '18rem',width: '20rem'}} variant="top" src="https://images.unsplash.com/photo-1608825090252-a2163590fe08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
+    </Card>
+    <Card  className='Ksection-card4'>
+      <Card.Img style={{ borderRadius: '16px',height: '18rem',width: '20rem'}} variant="top" src="https://images.unsplash.com/photo-1623995523843-f282cd8aa1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a2FybmF0YWthJTIwdGlnZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+    </Card> */}
+    </div>
+    <div className='Ksection-cardNames'>
+    {sectionData2.map((obj, index) => ( 
+        <div key={index} className='Ks-cards1'>
+      {obj.title}
+    </div>
+    ))}
     </div>
     </div>
     </div>

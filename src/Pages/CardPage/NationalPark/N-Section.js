@@ -1,9 +1,23 @@
+import axios from 'axios';
 import React from 'react'
+import { useEffect } from 'react';
+import { useState } from 'react';
 import { Card,Dropdown } from 'react-bootstrap'
 import { BsBank, BsFillStarFill } from 'react-icons/bs'
 import './N-Section.css'
 
 function Section() {
+  const [sectionData, setSectionData] = useState([]);
+
+  useEffect(() => {
+      
+    axios.get("https://mygreenkitchen.in/mgkapi/mgkhome").then((Response)=>{
+  
+    setSectionData(Response.data.exclussive_products) 
+    
+    })
+    }, [])
+  
   return (
     <div>
       <div className="N-icons">
@@ -17,6 +31,13 @@ function Section() {
       <BsBank className='N-icons1'/>
       <BsBank className='N-icons1'/>
       </div>
+      <div className='Ksection-cardNames'>
+    {sectionData.map((obj, index) => ( 
+        <div key={index} className='Ks-cards1'>
+      {obj.title}
+    </div>
+    ))}
+    </div>
       <div className="Nsection-main">
     <div className="N-section">
     <h1 className='Nh6s'>National Parks</h1>

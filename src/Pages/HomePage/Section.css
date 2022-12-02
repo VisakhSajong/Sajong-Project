@@ -60,6 +60,7 @@
 }
 .s-cards1{
     margin-left: 4rem;
+    font-size:  1.2rem;
 }
 .s-cards2{
     margin-left: 11rem;
@@ -349,27 +350,38 @@
 
                           /* Section 5 */
                         
-     .section5{
-        width: 45%;
+     /* .section5{
+        
         height: 652px;
         background-size: cover ;
         background-position: center;
         background-repeat: no-repeat;
+        
+    } */
+
+    .section5-img{
+       
+        width: 40%;
+        height: 652px;
         margin-top: 5rem;
-        margin-left: 9rem;
+        margin-left: 6rem;
         border-radius: 2rem;
     }
 
-    .section5-img{
-        position: absolute;
-        margin-left: 10rem;
+    .section5-img1{
+        width: 40%;
+        height: 652px;
+        margin-top: 5rem;
+        border-radius: 2rem;
+        margin-left: 6rem;
+        
     }
 
     
     
         .text5 {
             color: white;
-            margin-left: 49px;
+            margin-left: 11rem;
             margin-top: -29rem;
             font-size: 2.1rem;
         }
@@ -386,12 +398,12 @@
      cursor: pointer;
      border-radius: 1.6rem;
      border: 1px solid black;
-     margin-left: 3rem;
+     margin-left: 11rem;
     }
 
     .text5-img2{
         color: white;
-        margin-left: 43rem;
+        margin-left: 52rem;
         margin-top: -12rem;
         font-size: 2.1rem;
     }
@@ -410,12 +422,12 @@
      cursor: pointer;
      border-radius: 1.6rem;
      border: 1px solid black;
-     margin-left: 43rem;
+     margin-left: 53rem;
     }
 
     .section5-button3{
         margin-left: 8rem;
-        margin-top: 3rem;
+        margin-top: 22rem;
         background-color: white;
     }
     

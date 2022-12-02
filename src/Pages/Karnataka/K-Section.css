@@ -1,6 +1,9 @@
+.K-icons{
+    margin-left: 2rem;
+}
 
 .K-icons1{
-    margin-left: 1rem;
+    margin-left: 2rem;
         font-size: 4rem;
     margin-top: 2rem;
         }
@@ -23,6 +26,7 @@
 }
 
 .Ksection-card1{
+    margin-left: 2rem;
     height: 18rem;
     width: 20rem;
     border-radius: 16px !important;
@@ -155,6 +159,11 @@
     margin-top: 3rem;  
 }
 
+.Ki6{
+    font-size: 0.7rem;
+    margin-left: 3rem;
+}
+
 .Kh6{
     font-size: 0.7rem;
     margin-left: 4rem;
@@ -178,4 +187,8 @@
 
 .K-sectionCardMain{
     margin-left: 2rem;
+}
+
+.K-iconNames{
+    display: inline-flex;
 }
