@@ -17,7 +17,7 @@
   align-content: center;
 }
 .section-card1{
-    margin-left: 0rem;
+    margin-left: 1rem;
     width: 22rem;
     height: 1rem;
     
@@ -86,7 +86,7 @@
 }
 
 .section2-card1{
-    margin-left: 0rem;
+    margin-left: 1rem;
     width: 26rem;
     height: 1rem;
     
@@ -124,7 +124,7 @@
 
 .section2-button{
     margin-left: 4rem;
-    margin-top: -2rem;
+    margin-top: 1rem;
     background-color: white;
 }
 
@@ -187,10 +187,10 @@
 }
 
 .section4-card1{
-    margin-left: 0rem;
+    margin-left: 2rem;
     height: 20rem;
     width: 20rem;
-    border-radius: 20px !important;
+    border-radius: 20px;
     /* box-shadow: 5px 5px 5px 5px white; */
 
 }
@@ -244,8 +244,9 @@
     font-size: 1rem;
 }
 
-.s4-p1{
-    margin-left: 4rem;
+.s4-p1{ 
+        margin-left: 7rem;
+        margin-top: 0rem;
 }
 .s4-p2{
     margin-left: 15rem;
