@@ -1,0 +1,24 @@
+.NaruSection-Main{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap; 
+}
+
+.NaruImg-Main{
+    margin-left: 19rem;
+    margin-top: 3rem;
+}
+
+.NaruImg {
+    width: 27rem;
+}
+
+.NaruSection1{
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+
+.Rating{
+    margin-left: 51rem;
+    margin-top: -15rem;
+}

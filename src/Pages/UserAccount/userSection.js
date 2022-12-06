@@ -57,7 +57,6 @@ function UserSection() {
         </div>
         <div className='usersection2-main'>
         <div className="usersection2-icons">
-         
         <Card style={{ width: '18rem',height:'12rem' }}>
       <Card.Body>
       <BsLock className='usersection-icon1'  size={25} />

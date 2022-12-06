@@ -6,7 +6,8 @@ import UserAccount from './Pages/UserAccount/UserAccount'
 import NationalPark from './Pages/CardPage/NationalPark/NationalPark'
 import Login from './Pages/Login/Login'
 import Karnataka from './Pages/Karnataka/Karnataka'
-import Naruneyyu from './Pages/DetailsPage/Naruneyyu'
+import Naruneyyu from './Pages/DetailsPage/Naruneyyu/Naruneyyu'
+
 
 
 function App() {
