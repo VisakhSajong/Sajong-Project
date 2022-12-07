@@ -6,46 +6,33 @@ import NationalPark from '../CardPage/NationalPark/NationalPark'
 import './Section.css'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import axios from 'axios'
+import Naruneyyu from '../DetailsPage/Naruneyyu/Naruneyyu'
+import { useContext } from 'react'
+import { AppContext } from '../../AppContext'
 
-function Section() {
+function Section(props) {
 
-  const [data, setData] = useState();
-  const [sectionData, setSectionData] = useState([]);
-  const [sectionData1, setSectionData1] = useState([]);
-  const [sectionData2, setSectionData2] = useState([]);
-//  const handleClick =()=>{
-//     console.log("Clicked");
-//   }
+  const { HomesectionData,HomesectionData1, HomesectionData2 } = props;
 
-  useEffect(() => {
-      
-  axios.get("https://mygreenkitchen.in/mgkapi/mgkhome").then((Response)=>{
-    // console.log(Response.data);
-  setData(Response.data)
-  setSectionData(Response.data.exclussive_products) 
-  // console.log(Response.data.exclussive_products);
-  setSectionData1(Response.data.packed_products)
-  setSectionData2(Response.data.farmfresh_products)
-  })
-  }, [])
-
+  const {data} = useContext(AppContext)
+  
   const navigate=useNavigate()
 
-  const navigateToPark = () => {
-    navigate("/park");
+  const navigateToNeyyu = () => {
+    navigate("/Neyyu");
   };
   return (
                        // First Section 
 
     <div className='section'>
       <h6 className='h61'>LET US PLAN FOR YOU</h6>
-        <h1 className='h6s'>{data ? data.banners[0].title : ""}</h1>
+        <h1 className='h6s'>{data ? data.exclussive_products[0].title : ""}</h1>
         <BsFillArrowLeftSquareFill className='sectionIcon' />
         <BsFillArrowRightSquareFill className='sectionIcon1'/>
         <div className="section-card">
-        {sectionData.map((obj, index) => (
+        {HomesectionData.map((obj, index) => (
           <div key={index}>
-      <Card onClick={navigateToPark}  className='section-card1'>
+      <Card onClick={navigateToNeyyu}  className='section-card1'>
       <Card.Img  variant="top" src={obj.images[0]} />
     </Card>
     <div className='s-cards1'>
@@ -75,7 +62,7 @@ function Section() {
         <BsFillArrowRightSquareFill className='sectionIcon1'/>
         <div className="section2-card">
      
-      { sectionData1.map((obj,index)=>(
+      { HomesectionData1.map((obj,index)=>(
       
         <div key={index}>
            <Card  className='section2-card1'>
@@ -118,7 +105,7 @@ function Section() {
     <h6 className='h6'>SEASONAL SUGGESTIONS</h6>
     <h1 className='h6s'>Where To Next?</h1>
     <div className="section4-card">
-    {sectionData2.map((obj, index) => (
+    {HomesectionData2.map((obj, index) => (
       <div key={index}>
     <Card  className='section4-card1'>
       <Card.Img style={{ borderRadius: '20px'}} variant="top" src={obj.images[0]} />
@@ -171,7 +158,7 @@ function Section() {
     <button className='section5-button4'>View More Stories</button>
     </div>
     <Routes>
-      <Route path='Park' element={<NationalPark />}>
+      <Route path='neyyu' element={<Naruneyyu />}>
       </Route>
       </Routes>
     </div>

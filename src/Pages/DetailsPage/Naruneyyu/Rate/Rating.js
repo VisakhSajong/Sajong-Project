@@ -1,28 +1,3 @@
-// import React, { useState } from "react";
-
-// import Rate from "./Rate";
-
-// const Rating = () => {
-//   const [rating, setRating] = useState(0);
-  
-//   return (
-//     <>
-
-
-//       <div className="row">
-//         <div className="col">
-//           <h2>Rating</h2>
-//           <Rate rating={rating} onRating={(rate) => setRating(rate)} /> 
-//           <div className="rating">{rating}</div>
-//         </div>
-        
-//       </div>
-//     </>
-//   );
-// };
-
-
-// export default Rating;
 import './Rating.css'
 import React from 'react'
 import { useState } from 'react';
@@ -35,6 +10,8 @@ const colors ={
 
 
 function Rating() {
+  const [review, setReview] = useState([]);
+  const [listing,setListing] = useState(''); 
       const [currentValue, setCurrentValue] = useState(0);
       const [hoverValue, setHoverValue] = useState(undefined);
         const stars=Array(5).fill(0)
@@ -68,15 +45,20 @@ function Rating() {
     </div>
     <div className="val">{currentValue}(70 Reviews)</div>
     <textarea
+        value={listing}
+        onChange={(e)=>setListing(e.target.value)}
         placeholder="Write Your Reviews"
-        style={styles.textarea}
-      />
-
-      <button
-        style={styles.button}
-      >
+        style={styles.textarea} />
+      <button style={styles.button} onClick={()=>setReview([...review,listing])}>
         Submit
       </button>
+      {
+        review.map((value)=>(
+      <div style={styles.button} className="review">
+            <p>{value}</p>
+        </div>
+         ))
+        }
     </div>
   )
 }

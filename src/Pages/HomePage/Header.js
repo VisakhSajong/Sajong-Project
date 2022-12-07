@@ -10,17 +10,19 @@ import img2 from './img2.jpg'
 import { useNavigate } from 'react-router-dom';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import UserAccount from '../UserAccount/UserAccount';
-import axios from 'axios';
-import { useState } from 'react';
+import { useContext } from 'react';
+import { AppContext } from '../../AppContext';
 
 
 
 function Header() {
 
+    const {data} = useContext(AppContext)
+
   const handleClick =()=>{
     console.log("Clicked");
   }
-  const [data, setData] = useState();
+  
 
 
   const navigate=useNavigate()
@@ -30,15 +32,6 @@ function Header() {
     navigate("/user");
   };
 
-     useEffect(() => {
-      
-        axios.get("https://mygreenkitchen.in/mgkapi/mgkhome").then((Response)=>{
-          // console.log(Response.data);
-        setData(Response.data)  
-        })    
-     }, [])
-     
-      
 
   return (
     <div className='header'>

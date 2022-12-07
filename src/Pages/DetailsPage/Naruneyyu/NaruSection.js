@@ -1,22 +1,15 @@
 import axios from 'axios'
 import React from 'react'
+import { useContext } from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
+import { AppContext } from '../../../AppContext'
 import './NaruSection.css'
 import Rating from './Rate/Rating'
 
 function NaruSection() {
 
-        const [data,setData]=useState()
-
-    useEffect(() => {
-      
-        axios.get("https://mygreenkitchen.in/mgkapi/mgkhome").then((Response)=>{
-          // console.log(Response.data);
-        setData(Response.data)  
-        
-        })    
-     }, [])
+    const {data} = useContext(AppContext)
      
 
   return (
