@@ -1,16 +1,25 @@
 import axios from 'axios'
 import React from 'react'
-import { useContext } from 'react'
 import { useEffect } from 'react'
+
 import { useState } from 'react'
-import { AppContext } from '../../../AppContext'
+import { HomeUrl } from '../../../Services/Services'
+
 import './NaruSection.css'
 import Rating from './Rate/Rating'
 
 function NaruSection() {
 
-    const {data} = useContext(AppContext)
+    const [data, setData] = useState();
      
+    useEffect(() => {
+      
+      axios.get(`${HomeUrl}`).then((Response)=>{
+        // console.log(Response.data);
+      setData(Response.data)  
+  
+      })    
+   }, [])
 
   return (
     <div>

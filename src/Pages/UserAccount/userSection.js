@@ -1,7 +1,5 @@
 import React from 'react'
 import './userSection.css'
-
-import Avatar from 'react-avatar'
 import { BsArrowCounterclockwise, BsBuilding, BsCamera, BsClock, BsCreditCard, BsLock } from 'react-icons/bs'
 import { Card } from 'react-bootstrap'
 import img2 from './img2.jpg'

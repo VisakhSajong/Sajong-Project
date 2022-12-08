@@ -1,0 +1,1 @@
+export const HomeUrl='https://mygreenkitchen.in/mgkapi/mgkhome'

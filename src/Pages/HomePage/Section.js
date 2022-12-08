@@ -2,19 +2,30 @@ import React, { useEffect, useState } from 'react'
 import { Card } from 'react-bootstrap'
 import { BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill, BsFillStarFill } from 'react-icons/bs'
 import { useNavigate } from 'react-router-dom'
-import NationalPark from '../CardPage/NationalPark/NationalPark'
 import './Section.css'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import axios from 'axios'
 import Naruneyyu from '../DetailsPage/Naruneyyu/Naruneyyu'
-import { useContext } from 'react'
-import { AppContext } from '../../AppContext'
+import { HomeUrl } from '../../Services/Services'
 
-function Section(props) {
 
-  const { HomesectionData,HomesectionData1, HomesectionData2 } = props;
+function Section() {
 
-  const {data} = useContext(AppContext)
+  const [data, setData] = useState();
+  const [HomesectionData, HomesetSectionData] = useState([]);
+  const [HomesectionData1, HomesetSectionData1] = useState([]);
+  const [HomesectionData2, HomesetSectionData2] = useState([]);
+
+  useEffect(() => {
+      
+    axios.get(`${HomeUrl}`).then((Response)=>{
+      // console.log(Response.data);
+    setData(Response.data)  
+    HomesetSectionData(Response.data.exclussive_products)
+    HomesetSectionData1(Response.data.packed_products)
+    HomesetSectionData2(Response.data.farmfresh_products)
+    })    
+ }, [])
   
   const navigate=useNavigate()
 

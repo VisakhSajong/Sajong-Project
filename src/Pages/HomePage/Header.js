@@ -10,15 +10,24 @@ import img2 from './img2.jpg'
 import { useNavigate } from 'react-router-dom';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import UserAccount from '../UserAccount/UserAccount';
-import { useContext } from 'react';
-import { AppContext } from '../../AppContext';
+import axios from 'axios';
+import { useState } from 'react';
+import { HomeUrl } from '../../Services/Services';
 
 
 
 function Header() {
 
-    const {data} = useContext(AppContext)
+   const [data, setData] = useState();
+  useEffect(() => {
+      
+    axios.get(`${HomeUrl}`).then((Response)=>{
+      // console.log(Response.data);
+    setData(Response.data)  
+    })    
+ }, [])
 
+    
   const handleClick =()=>{
     console.log("Clicked");
   }

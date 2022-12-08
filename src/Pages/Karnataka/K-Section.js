@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import { Button, Card,Dropdown } from 'react-bootstrap'
 import { BsBank, BsFillStarFill } from 'react-icons/bs'
+import { HomeUrl } from '../../Services/Services'
 import './K-Section.css'
 
 
@@ -15,7 +16,7 @@ function Section() {
 
     useEffect(() => {
       
-        axios.get("https://mygreenkitchen.in/mgkapi/mgkhome").then((Response)=>{
+      axios.get(`${HomeUrl}`).then((Response)=>{
           // console.log(Response.data);
         setData(Response.data)
         setSectionData(Response.data.farmfresh_products)

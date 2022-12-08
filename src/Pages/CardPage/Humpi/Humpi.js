@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../../HomePage/Footer'
 import NavBar from '../NationalPark/N-NavBar'
 import HumpiSection from './HumpiSection'
 
@@ -7,6 +8,7 @@ function Humpi() {
     <div>
        <NavBar />
         <HumpiSection />
+        <Footer />
     </div>
   )
 }
