@@ -1,19 +1,21 @@
 import axios from 'axios'
 import React, { useEffect } from 'react'
 import { useState } from 'react'
-import { useContext } from 'react'
+
 import { Card } from 'react-bootstrap'
 import { BsFillStarFill } from 'react-icons/bs'
+import { HomeUrl } from '../../../Services/Services'
 
-import { AppContext } from '../../../AppContext'
+
 import './HumpiSection.css'
 
 function HumpiSection() {
-    const {data} = useContext(AppContext)
+    const [data, setData] = useState();
     const [HomesectionData2, HomesetSectionData2] = useState([]);
 
   useEffect(() => {
-    axios.get("https://mygreenkitchen.in/mgkapi/mgkhome").then((Response)=>{
+    axios.get(`${HomeUrl}`).then((Response)=>{
+      setData(Response.data)  
       HomesetSectionData2(Response.data.farmfresh_products)
     })    
  }, [])

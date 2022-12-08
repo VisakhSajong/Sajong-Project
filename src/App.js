@@ -10,10 +10,11 @@ import Naruneyyu from './Pages/DetailsPage/Naruneyyu/Naruneyyu'
 import axios from 'axios'
 import { useState } from 'react'
 import Humpi from './Pages/CardPage/Humpi/Humpi'
+import Dotbus from './Pages/TicketBooking/Dotbus'
 
 
 function App() {
-  
+
   return (
       <div className='main'>
       <Router>
@@ -43,6 +44,10 @@ function App() {
       </Routes>
       <Routes>
       <Route path='humpi' element={<Humpi />}>
+      </Route>
+      </Routes>
+      <Routes>
+      <Route path='dotbus' element={<Dotbus />}>
       </Route>
       </Routes>
       </Router>
