@@ -7,10 +7,8 @@ import NationalPark from './Pages/CardPage/NationalPark/NationalPark'
 import Login from './Pages/Login/Login'
 import Karnataka from './Pages/Karnataka/Karnataka'
 import Naruneyyu from './Pages/DetailsPage/Naruneyyu/Naruneyyu'
-import axios from 'axios'
-import { useState } from 'react'
 import Humpi from './Pages/CardPage/Humpi/Humpi'
-import Dotbus from './Pages/TicketBooking/Dotbus'
+import DotHomePage from './Pages/TicketBooking/Pages/HomePage/DotHomePage'
 
 
 function App() {
@@ -47,7 +45,7 @@ function App() {
       </Route>
       </Routes>
       <Routes>
-      <Route path='dotbus' element={<Dotbus />}>
+      <Route path='dothome' element={<DotHomePage />}>
       </Route>
       </Routes>
       </Router>

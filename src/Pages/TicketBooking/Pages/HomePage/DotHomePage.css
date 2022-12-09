@@ -1,0 +1,151 @@
+.DotHeader{
+    width: 100%;
+    margin: 0;
+    height: 60px;
+    position: fixed;
+    background: #d84f57;
+}
+
+.DotLogo{
+    width: 89px;
+    height: 59px;
+    text-indent: -1000px;
+    float: left;
+    margin-left: 5rem;
+}
+
+.DotHeader1{
+    padding-left: 5rem;
+    display: flex;
+}
+
+.DotHeader2{
+    color: white;
+    margin-top: 1rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.DotHeader3{
+    color: white;
+    margin-left: 10px;
+    margin-top: 1rem;
+    display: flex;
+}
+
+.DotHeader4{
+    padding-left: 43rem;
+    display: flex;
+}
+
+.DotHeader5{
+    color: white;
+    margin-top: 1rem;
+    display: flex;
+}
+
+.DotHeader6{
+    color: white;
+    margin-left: 10px;
+    margin-top: 1rem;
+    display: flex;
+}
+
+.DotHeader7{
+    color: white;
+    margin-left: 10px;
+    margin-top: 1rem;
+    display: flex;
+}
+
+.dotavatar{
+    margin-top: 9px;
+    margin-left: 5px;
+    max-width: 100%;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.dotimage1{
+    height: 450px;
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    background-repeat: round;
+}
+
+.bannersearch{
+    padding-left: 25rem;
+    display: flex;
+    padding-top: 13rem;
+   
+}
+
+
+    .searchbox{
+        width: 225px;
+    border: 1px solid #d2d2d2;
+    height: 45px;
+    background-color: #fff;
+    position: relative;
+    }
+
+    .searchbox1{
+        width: 225px;
+    border: 1px solid #d2d2d2;
+    height: 45px;
+    background-color: #fff;
+    }
+    .date{
+        background-color: white;
+        height: 45px;
+    }
+  
+    .bannerbox {
+        background-color: #fff;
+        padding: 10px 0;
+        margin-top: -4rem;
+        box-shadow: 0 3px 7px 0 rgb(0 0 0 / 28%);
+        border: 1px solid black;
+        width: 42%;
+        height: 7rem;
+        margin-left: 27rem;
+    }
+
+    .bannerboximg{
+        margin-left: 1rem;
+    }
+
+    .bannerboxcontent{
+        color: #4a4a4a;
+    font-family: Montserrat;
+    font-size: 19px;
+    text-align: left;
+    text-align: left;
+    margin-left: 10rem;
+    margin-top: -85px;
+    }
+
+    .bannerboxcontent2{
+        font-size: 14px;
+    text-align: left;
+    color: #737373;
+    margin-left: 10rem;
+    }
+
+    .searchboxButton{
+        height: 46px;
+    width: 144px;
+    border-width: 0;
+    background-color: #d74f57;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900!important;
+    font-style: normal;
+    font-stretch: normal;
+    text-transform: none;
+    }
+    .searchboxButton:hover {
+        background-color: black;
+    }
