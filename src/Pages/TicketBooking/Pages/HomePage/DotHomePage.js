@@ -7,8 +7,7 @@ import UserAccount from '../../../UserAccount/UserAccount';
 import "react-datepicker/dist/react-datepicker.css";
 import { useState } from 'react';
 import DatePicker from 'react-date-picker';
-
-
+import { MDBIcon } from 'mdb-react-ui-kit';
 
 
 function DotHomePage() {
@@ -108,9 +107,85 @@ Enter your mobile number below to download the redBus mobile app.</p>
     <img className="dotsection3icon" src="https://s1.rdbuz.com/web/images/home/promise.png" alt="" />
     <div className='dotsection3Text'>WE PROMISE TO DELIVER</div>
     <div className="dotsectioncards">
+     <div className="dotsectioncard1">
+      <img className='dotsectioncard1img' src="https://s2.rdbuz.com/web/images/home/benefits.png" alt="" />
+      <div className="dotsectioncard1Text">UNMATCHED BENEFITS</div>
+      <p className='dotsectioncard1Text'>We take care of your travel beyond ticketing by providing you with innovative and unique benefits.</p>
+      </div> 
+     <div className="dotsectioncard2">
+     <img className='dotsectioncard1img' src="https://s2.rdbuz.com/web/images/home/benefits.png" alt="" />
+      <div className="dotsectioncard1Text">UNMATCHED BENEFITS</div>
+      <p className='dotsectioncard1Text'>We take care of your travel beyond ticketing by providing you with innovative and unique benefits.</p>
       
+      </div> 
+     <div className="dotsectioncard3">
+     <img className='dotsectioncard1img' src="https://s2.rdbuz.com/web/images/home/benefits.png" alt="" />
+      <div className="dotsectioncard1Text">UNMATCHED BENEFITS</div>
+      <p className='dotsectioncard1Text'>We take care of your travel beyond ticketing by providing you with innovative and unique benefits.</p>
+      </div> 
     </div>
-
+    </div>
+    <div className="dotsection4">
+      <h2 className='dotsection4Text'>AWARDS & RECOGNITION</h2>
+      <div className="dotsection4contents">
+      <div className="dotsection4content1">
+        <img src="https://s2.rdbuz.com/web/images/home/awards/Business_Standard1.png" alt="" />
+        <p className='dotsection4content1Text'>Most Innovative <br /> Company</p>
+      </div>
+      <div className="dotsection4content2">
+        <img src="https://s2.rdbuz.com/web/images/home/awards/Business_Standard1.png" alt="" />
+        <p className='dotsection4content1Text'>Most Innovative <br /> Company</p>
+      </div>
+      <div className="dotsection4content2">
+        <img src="https://s2.rdbuz.com/web/images/home/awards/Business_Standard1.png" alt="" />
+        <p className='dotsection4content1Text'>Most Innovative <br /> Company</p>
+      </div>
+      </div>
+    </div>
+    <div className="dotsection5">
+    <h2 className='dotsection4Text'>OUR GLOBAL PRESENCE</h2>
+    <div className="dotsection5flag1">
+    <img className='dotsection5icon1' src="https://www.sciencekids.co.nz/images/pictures/flags680/India.jpg" alt="" />
+    <img className='dotsection5icon2' src="https://www.sciencekids.co.nz/images/pictures/flags680/India.jpg" alt="" />
+    <img className='dotsection5icon2' src="https://www.sciencekids.co.nz/images/pictures/flags680/India.jpg" alt="" />
+    </div>
+    <div className="dotsection5flag1">
+    <img className='dotsection5icon1' src="https://www.sciencekids.co.nz/images/pictures/flags680/India.jpg" alt="" />
+    <img className='dotsection5icon2' src="https://www.sciencekids.co.nz/images/pictures/flags680/India.jpg" alt="" />
+    <img className='dotsection5icon2' src="https://www.sciencekids.co.nz/images/pictures/flags680/India.jpg" alt="" />
+    </div>
+    </div>
+    <div className="dotsection6"> 
+    <div className="dotfooter-section2">
+     <h6 className=''>About RedBus</h6><br />
+     <p className=''>About Us</p>
+     <p className=''>Contact Us</p>
+     <p>Mobile Version</p>
+     <p>redBus on Mobile</p>
+     <p>Sitemap</p>
+     <p>Offers</p>
+     <p>Carrears</p>
+    </div>
+    <div className="dotfooter-section3">
+     <h6 className=''>About RedBus</h6><br />
+     <p className=''>About Us</p>
+     <p className=''>Contact Us</p>
+     <p>Mobile Version</p>
+     <p>redBus on Mobile</p>
+     <p>Sitemap</p>
+     <p>Offers</p>
+     <p>Carrears</p>
+    </div>
+    <div className="dotfooter-section3">
+     <h6 className=''>About RedBus</h6><br />
+     <p className=''>About Us</p>
+     <p className=''>Contact Us</p>
+     <p>Mobile Version</p>
+     <p>redBus on Mobile</p>
+     <p>Sitemap</p>
+     <p>Offers</p>
+     <p>Carrears</p>
+    </div>
     </div>
   </div>
   )

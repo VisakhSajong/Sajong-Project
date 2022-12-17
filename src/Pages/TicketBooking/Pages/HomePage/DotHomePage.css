@@ -277,7 +277,7 @@
     background-color: #ededed;
     color: #4a4a4a;
     width: 100%;
-    height: 450px;
+    height: 670px;
     margin-top: -4rem;
     }
 
@@ -291,3 +291,120 @@
     color: #4a4a4a;
     font-weight: 600;
     }
+
+    .dotsectioncard1{
+        box-shadow: 0 0 1.2px #686868;
+        height: 390px;
+        color: #3c3d41;
+        background-color: #fff;
+        width: 25%;
+         margin-left: 13rem;
+        margin-top: 3rem
+    }
+
+    .dotsectioncard2{
+        box-shadow: 0 0 1.2px #686868;
+        height: 390px;
+        color: #3c3d41;
+        background-color: #fff;
+        width: 25%;
+        margin-top: 3rem
+    }
+
+    .dotsectioncard3{
+        box-shadow: 0 0 1.2px #686868;
+        height: 390px;
+        color: #3c3d41;
+        background-color: #fff;
+        width: 25%;
+        margin-top: 3rem
+    }
+
+    .dotsectioncards{
+        display: flex;
+    }
+
+    
+    .dotsectioncard1img{
+        margin-top: 2rem;
+     margin-left: 7rem;
+    }
+
+    .dotsectioncard1Text{
+        margin-left: 6rem;
+        margin-top: 1rem;
+    }
+
+    .dotsection4{
+        margin-top: 1rem;
+        width: 100%;
+       
+    }
+
+    .dotsection4Text{
+        text-align: center;
+    }
+
+    .dotsection4content1{
+        margin-left: 22rem;
+    }
+    .dotsection4content1Text{
+        margin-left: 2rem;
+        margin-top: 0rem;
+    }
+    .dotsection4content1Text2{
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+
+    .dotsection4contents{
+        display: flex;
+    }
+
+    .dotsection4content2{
+        margin-left: 7rem;
+    }
+
+    .dotsection5{
+        background-color: #ededed;
+    color: #4a4a4a;
+    width: 100%;
+    height: 390px;
+    margin-top: 2rem;
+    }
+
+    .dotsection5icon1{
+        width: 11rem;
+        margin-left: 23rem; 
+    }
+
+    .dotsection5icon2{
+        width: 11rem;
+        margin-left: 7rem; 
+    }
+
+   .dotsection5flag1{
+    margin-top: 2rem;
+   } 
+
+   .dotsection6{
+    background-color: #1b2330;
+    height: 22rem;
+    color: white;
+    padding-top: 1rem;
+    display: flex;
+   }
+
+   .dotfooter-section2{
+    margin-left: 8rem;
+   }
+
+   /* .dotfootersections{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+   } */
+
+   .dotfooter-section3{
+    margin-left: 10rem;
+   }
